@@ -1,564 +1,1126 @@
-\begin{table*}%
-\caption{Artigos aceitos e suas características extraídas.\label{tab:artigos_classificados}}
-\begin{tabular*}{\textwidth}{@{\extracolsep\fill}lllllll@{}}\toprule
+\begin{supertabular}{
+    p{0.08\textwidth} % Referencia
+    p{0.15\textwidth} % Display
+    p{0.20\textwidth} % Input
+    p{0.15\textwidth} % Interação
+    p{0.10\textwidth} % Coluna 5 (e.g., Colaboração Suportada)
+    p{0.10\textwidth} % Coluna 6 (e.g., Modelo Utilizado)
+    p{0.08\textwidth} % Coluna 7 (e.g., Tamanho da Superfície Interativa)
+}
+\toprule
 \textbf{Referência} & \textbf{Display} & \textbf{Input} & \textbf{Interação} & \textbf{Colaboração} & \textbf{Modelo} & \textbf{Tamanho} \\
-\midrule
+\toprule
 \cite{Shen_2002_Sharing} & Front-Projected & Pen & Tangibility & Colaboração presencial & n/a & n/a \\
+\hline
 \cite{Vernier_2002_Visualization} & Front-Projected & Pen, Sound-Based & Tangibility & Colaboração presencial & n/a & n/a \\
+\hline
 \cite{Shen_2003_Personal} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
-\cite{Shen_2003_Personal} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
-\cite{Moghaddam_2004_Visualization} & Front-Projected & Pen & Tangibility & Colaboração presencial & n/a & n/a \\
-\cite{Morris_2004_Individual} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
-\cite{Ryall_2004_Exploring} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
+\hline
+\cite{Shen_2003_Ubitable} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
+\hline
+\cite{Rogers_2004_Collaborating} & Rear-Projected & Pen, Sensor-Assisted-Vision-Based & Tangibility & Colaboração presencial & n/a & 44.5” \\
+\hline
 \cite{Shen_2004_Diamondspin} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
+\hline
+\cite{Ryall_2004_Exploring} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
+\hline
+\cite{Morris_2004_Individual} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
+\hline
 \cite{Sluis_2004_Read-It} & Front-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens & Tangibility & Colaboração presencial & Visual Interaction Platform (VIP) & n/a \\
+\hline
 \cite{Watson_2004_Projects} & Front-Projected & Tangible-Tokens & Tangibility & Colaboração presencial & n/a & n/a \\
-\cite{Rogers_2004 } & Rear-Projected & Pen, Sensor-Assisted-Vision-Based & Tangibility & Colaboração presencial & n/a & 44.5” \\
-\cite{Brederode_2005_Powerball} & Front-Projected & Tangible-Tokens & Tangibility & Colaboração presencial & n/a & n/a \\
-\cite{Forlines_2005_Under} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
-\cite{Hussain_Experimental} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
-\cite{Kruger_2005_Fluid} & Rear-Projected, Front-Projected & Sensor-Assisted-Vision-Based & Touch & Colaboração presencial & SMART Board + Top projected & n/a \\
+\hline
+\cite{Moghaddam_2004_Visualization} & Front-Projected & Pen & Tangibility & Colaboração presencial & n/a & n/a \\
+\hline
 \cite{Liu_An} & Front-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Touch & Colaboração presencial & n/a & n/a \\
-\cite{Moher_2005_Storygrid} & Front-Projected & Tangible-Tokens & Tangibility & Colaboração presencial & n/a & n/a \\
-\cite{Reitmayr_2005_Localisation} & Front-Projected & Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & n/a & n/a \\
-\cite{Scott_2005_Storage} & Rear-Projected & Sensor-Assisted-Vision-Based & Touch & Colaboração presencial & SMART Board & n/a \\
+\hline
 \cite{Shen_2005_Cor} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
+\hline
+\cite{Hussain_Experimental} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
+\hline
+\cite{Kruger_2005_Fluid} & Rear-Projected, Front-Projected & Sensor-Assisted-Vision-Based & Touch & Colaboração presencial & SMART Board + Top projected & n/a \\
+\hline
+\cite{Reitmayr_2005_Localisation} & Front-Projected & Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Brederode_2005_Powerball} & Front-Projected & Tangible-Tokens & Tangibility & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Scott_2005_Storage} & Rear-Projected & Sensor-Assisted-Vision-Based & Touch & Colaboração presencial & SMART Board & n/a \\
+\hline
 \cite{Watson_2005_Storygrid} & Front-Projected & Tangible-Tokens & Tangibility & Colaboração presencial & n/a & n/a \\
-\cite{Apted_2006_Tabletop} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
-\cite{Chia_Shen_Multi-User} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
-\cite{Esenther_2006_Fluid} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
-\cite{Everitt_Multispace} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
-\cite{Ganser_Infractables} & Rear-Projected & Pen, Sensor-Assisted-Vision-Based & Tangibility & Colaboração presencial & n/a & n/a \\
-\cite{Haller_2006_Shared} & Front-Projected & Pen, Sensor-Assisted-Vision-Based & Tangibility & Colaboração presencial & Anoto pens & n/a \\
-\cite{Hinrichs_2006_Evaluating} & Front-Projected & Sensor-Assisted-Vision-Based & Touch & Colaboração presencial & n/a & 72” \\
-\cite{Jord__2006_The} & Rear-Projected & Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & n/a & n/a \\
-\cite{Kakehi_Transparent} & Rear-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Gesture, Tangibility & Colaboração presencial & n/a & n/a \\
-\cite{Kobayashi_2006_Collaborative} & Front-Projected & Tangible-Tokens & Tangibility & Colaboração presencial & n/a & 40” \\
-\cite{Lapides_The} & Embedded & Pen & Tangibility & Usuário único & n/a & n/a \\
-\cite{Lee_2006_U-Table} & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & u-Table & 59” \\
-\cite{Mazalek_2006_Tviews} & Embedded & Sensor-Assisted-Vision-Based, Tangible-Tokens & Tangibility & Colaboração presencial & TViews & n/a \\
-\cite{Morris_Supporting} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
-\cite{Morris_2006_Cooperative} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
-\cite{Morris_2006_Cooperative} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
-\cite{Morris_2006_Cooperative} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
-\cite{Morris_2006_Cooperative} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
-\cite{Parker_2006_Integrating} & Front-Projected & Pen & Tangibility & Usuário único & n/a & n/a \\
-\cite{Piper_2006_Sides} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
-\cite{Pleizier_2006_Presenting} & Front-Projected & Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & n/a & n/a \\
-\cite{Ryall_Experiences} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
-\cite{Smeaton_Collaborative} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
-\cite{Smeaton_2006_Collaborative} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
+\hline
+\cite{Moher_2005_Storygrid} & Front-Projected & Tangible-Tokens & Tangibility & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Forlines_2005_Under} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
+\hline
 \cite{Tang_2006_Collaborative} & Front-Projected & Pen, Sensor-Assisted-Vision-Based & Tangibility, Touch & Colaboração presencial & n/a & n/a \\
-\cite{Tse_2006_Gsi} & Front-Projected & Sound-Based, Electrical-Based & Gesture, Multi-touch, Speech, Touch & Colaboração presencial & Diamond Touch + Gesture + Speech & 42” \\
+\hline
+\cite{Smeaton_Collaborative} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
+\hline
+\cite{Kobayashi_2006_Collaborative} & Front-Projected & Tangible-Tokens & Tangibility & Colaboração presencial & n/a & 40” \\
+\hline
+\cite{Smeaton_2006_Collaborative} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
+\hline
+\cite{Morris_2006_Cooperative} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
+\hline
+\cite{Tse_2006_Enabling} & Front-Projected & Sound-Based, Electrical-Based & Gesture, Multi-touch, Speech, Touch & Colaboração presencial & Diamond Touch + Gesture + Speech & 42” \\
+\hline
+\cite{Hinrichs_2006_Evaluating} & Front-Projected & Sensor-Assisted-Vision-Based & Touch & Colaboração presencial & n/a & 72” \\
+\hline
+\cite{Ryall_Experiences} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
+\hline
+\cite{Esenther_2006_Fluid} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
+\hline
 \cite{Tse_2006_Gsi} & Front-Projected & Pen, Sound-Based, Electrical-Based & Gesture, Multi-touch, Speech, Tangibility, Touch & Colaboração presencial & DiamondTouch + Gesture + Speech & 42” \\
-\cite{Wigdor_2006_Table-Centric} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
+\hline
+\cite{Ganser_Infractables} & Rear-Projected & Pen, Sensor-Assisted-Vision-Based & Tangibility & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Parker_2006_Integrating} & Front-Projected & Pen & Tangibility & Usuário único & n/a & n/a \\
+\hline
 \cite{Yang_2006_Maptable} & Rear-Projected & Sensor-Assisted-Vision-Based & Touch & Colaboração presencial & SMART Board & n/a \\
-\cite{Al_Mahmud_2007_Amazed} & Front-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens & Tangibility & Colaboração presencial & Visual Interaction Platform (VIP) & n/a \\
-\cite{Bakker_2007_Tangible} & Embedded & Tangible-Tokens, Electrical-Based & Tangibility, Touch & Colaboração presencial & n/a & n/a \\
-\cite{Bakker_2007_Tangible} & Embedded & Tangible-Tokens, Electrical-Based & Tangibility, Touch & Colaboração presencial & n/a & n/a \\
-\cite{Buisine_2007_Computer-Supported} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
-\cite{Collins_2007_Exploring} & Front-Projected & Pen & Tangibility & Colaboração presencial & n/a & n/a \\
-\cite{Collins_2007_Exploring} & Front-Projected & Pen, Sensor-Assisted-Vision-Based & Gesture, Tangibility & Colaboração presencial & n/a & n/a \\
-\cite{Corrie_2007_Toward} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
-\cite{Forlines_2007_Direct-Touch} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
-\cite{Hancock_2007_Shallow-Depth} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
-\cite{Hilliges_2007_The} & Embedded & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Tangibility, Touch & Colaboração presencial & n/a & 79” \\
-\cite{Isenberg_2007_Interactive} & Rear-Projected & Sensor-Assisted-Vision-Based & Touch & Colaboração presencial & SMART Board & n/a \\
-\cite{Ishido_Evaluation} & Rear-Projected, Front-Projected & Sensor-Assisted-Vision-Based & Touch & Colaboração presencial & SMART Board + Top projected & n/a \\
-\cite{Jord__2007_The} & Rear-Projected & Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & reacTable & n/a \\
-\cite{Lee_2007_Believable} & Rear-Projected & Tangible-Tokens, Vision-Based & Gesture, Multi-touch, Tangibility, Touch & Colaboração presencial & n/a & n/a \\
-\cite{Lee_2007_Believable} & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & u-Table & 59” \\
-\cite{Leithinger_2007_Improving} & Rear-Projected & Pen & Tangibility & Usuário único & n/a & n/a \\
-\cite{M_ller_Tomfelde_2007_Exploratory} & Embedded & Sensor-Assisted-Vision-Based & Touch & Colaboração presencial & [braccetto] research platform & 46’’ \\
-\cite{Mazalek_2007_The} & Embedded & Sensor-Assisted-Vision-Based, Tangible-Tokens & Tangibility & Colaboração presencial & TViews & n/a \\
-\cite{Micire_2007_Improving} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
+\hline
+\cite{Morris_2006_Mediating} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
+\hline
+\cite{Chia_Shen_Multi-User} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
+\hline
+\cite{Everitt_Multispace} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
+\hline
+\cite{Pleizier_2006_Presenting} & Front-Projected & Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Haller_2006_Shared} & Front-Projected & Pen, Sensor-Assisted-Vision-Based & Tangibility & Colaboração presencial & Anoto pens & n/a \\
+\hline
+\cite{Piper_2006_Sides} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
+\hline
+\cite{Morris_Supporting} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
+\hline
+\cite{Wigdor_2006_Table-Centric} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
+\hline
+\cite{Apted_2006_Tabletop} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
+\hline
+\cite{Morris_2006_Teamsearch} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
+\hline
+\cite{Morris_2006_Teamtag} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
+\hline
+\cite{Lapides_The} & Embedded & Pen & Tangibility & Usuário único & n/a & n/a \\
+\hline
+\cite{Jord__2006_The} & Rear-Projected & Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Kakehi_Transparent} & Rear-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Gesture, Tangibility & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Mazalek_2006_Tviews} & Embedded & Sensor-Assisted-Vision-Based, Tangible-Tokens & Tangibility & Colaboração presencial & TViews & n/a \\
+\hline
+\cite{Lee_2006_U-Table} & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & u-Table & 59” \\
+\hline
 \cite{Nakashima_2006_A} & Rear-Projected, Front-Projected & Tangible-Tokens, Wearables & Tangibility & Colaboração presencial & n/a & n/a \\
-\cite{Song_Vision-Based} & Front-Projected & Vision-Based & Touch & Usuário único & n/a & n/a \\
+\hline
 \cite{Terrenghi_2007_Affordances} & Rear-Projected & Vision-Based & Gesture, Multi-touch, Touch & Colaboração presencial & n/a & 30” \\
-\cite{Tse_2007_Multimodal} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
-\cite{TSE_2007_Multimodal} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
-\cite{Tuddenham_2007_Distributed} & Front-Projected & Pen & Tangibility & Colaboração presencial, Colaboração remota & n/a & n/a \\
+\hline
+\cite{Al_Mahmud_2007_Amazed} & Front-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens & Tangibility & Colaboração presencial & Visual Interaction Platform (VIP) & n/a \\
+\hline
+\cite{Lee_2007_Believable} & Rear-Projected & Tangible-Tokens, Vision-Based & Gesture, Multi-touch, Tangibility, Touch & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Buisine_2007_Computer-Supported} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
+\hline
+\cite{Forlines_2007_Direct-Touch} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
+\hline
 \cite{Tuddenham_2007_Distributed} & Front-Projected & Pen & Tangibility & Colaboração remota & n/a & n/a \\
+\hline
+\cite{Ishido_Evaluation} & Rear-Projected, Front-Projected & Sensor-Assisted-Vision-Based & Touch & Colaboração presencial & SMART Board + Top projected & n/a \\
+\hline
+\cite{M_ller_Tomfelde_2007_Exploratory} & Embedded & Sensor-Assisted-Vision-Based & Touch & Colaboração presencial & [braccetto] research platform & 46’’ \\
+\hline
+\cite{Collins_2007_Exploring} & Front-Projected & Pen, Sensor-Assisted-Vision-Based & Gesture, Tangibility & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Lee_2007_Gesture-Based} & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & u-Table & 59” \\
+\hline
+\cite{Micire_2007_Improving} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
+\hline
+\cite{Leithinger_2007_Improving} & Rear-Projected & Pen & Tangibility & Usuário único & n/a & n/a \\
+\hline
+\cite{Isenberg_2007_Interactive} & Rear-Projected & Sensor-Assisted-Vision-Based & Touch & Colaboração presencial & SMART Board & n/a \\
+\hline
+\cite{TSE_2007_Multimodal_Multiplayer} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
+\hline
+\cite{Tse_2007_Multimodal} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
+\hline
+\cite{hitchner2007music_Music } & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
+\hline
+\cite{Hancock_2007_Shallow-Depth} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
+\hline
 \cite{Yamaguchi_2007_Strategic} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
-\cite{hitchner2007music } & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
-\cite{Al_Mahmud_2008_Designing} & Front-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens & Tangibility & Colaboração presencial & Visual Interaction Platform (VIP) & n/a \\
-\cite{Bezerianos_2008_Presence} & Embedded & Electrical-Based & Touch & Colaboração presencial & n/a & 46” \\
-\cite{Block_2008_Pen} & Front-Projected & Pen, Sensor-Assisted-Vision-Based, Tangible-Tokens & Tangibility & Usuário único & n/a & n/a \\
-\cite{Brandl_2008_Combining} & Front-Projected & Pen, Electrical-Based & Gesture, Multi-touch, Tangibility, Touch & Usuário único & DiamondTouch + Anoto Pen & 42” \\
-\cite{Bredies_2008_The} & Rear-Projected & Sensor-Assisted-Vision-Based & Multi-touch, Touch & Colaboração presencial & n/a & n/a \\
-\cite{Gabrielli_2008_A} & Embedded & Electrical-Based & Touch & Usuário único & n/a & 19” \\
-\cite{Ghanam_2008_Utilizing} & Embedded & Pen, Sound-Based, Sensor-Assisted-Vision-Based & Speech, Touch & Colaboração presencial & n/a & n/a \\
-\cite{Heijboer_2008_Keeping} & Rear-Projected & Tangible-Tokens & Tangibility & Colaboração presencial & n/a & n/a \\
-\cite{Hornecker_2008_Collaboration} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
-\cite{Izadi_2008_Experiences} & Embedded & Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Usuário único & ThinSight & n/a \\
-\cite{Kierkels_2008_Children’S} & Rear-Projected & Tangible-Tokens, Vision-Based & Multi-touch, Tangibility & Colaboração presencial & n/a & n/a \\
-\cite{Kim_2008_An} & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & u-Table & 59” \\
-\cite{Leitner_2008_Incretable,} & Rear-Projected, Front-Projected & Pen, Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & n/a & n/a \\
-\cite{Liu_Jun_2008_Improving} & Front-Projected & Pen, Tangible-Tokens, Wearables & Tangibility & Colaboração presencial & n/a & 75” \\
-\cite{M_ller_Tomfelde_2008_Touchers} & Embedded & Sensor-Assisted-Vision-Based & Touch & Colaboração presencial & [braccetto] research platform & 46’’ \\
-\cite{Maquil_2008_The} & Front-Projected & Tangible-Tokens & Tangibility & Colaboração presencial & n/a & n/a \\
-\cite{Marshall_2008_When} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
-\cite{Miller_2008_Interaction} & Rear-Projected & Sound-Based, Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Gesture, Speech, Tangibility & Colaboração presencial & n/a & 83” \\
-\cite{Miura_A} & Rear-Projected & Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & AwareTable & n/a \\
-\cite{Na_2008_Tmar} & Rear-Projected & Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & ARTable & n/a \\
-\cite{Piper_2008_Supporting} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
-\cite{Sato_2008_Implementation} & Embedded & Vision-Based & Gesture & Colaboração presencial & n/a & n/a \\
-\cite{Schremmer_2008_Hxi} & Embedded & Sensor-Assisted-Vision-Based & Touch & Colaboração presencial & [braccetto] research platform & 46’’ \\
+\hline
+\cite{Tuddenham_2007_T3} & Front-Projected & Pen & Tangibility & Colaboração presencial, Colaboração remota & n/a & n/a \\
+\hline
+\cite{Collins_2007_Tabletop} & Front-Projected & Pen & Tangibility & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Bakker_2007_Tangible} & Embedded & Tangible-Tokens, Electrical-Based & Tangibility, Touch & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Hilliges_2007_The} & Embedded & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Tangibility, Touch & Colaboração presencial & n/a & 79” \\
+\hline
+\cite{Jord__2007_The} & Rear-Projected & Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & reacTable & n/a \\
+\hline
+\cite{Mazalek_2007_The} & Embedded & Sensor-Assisted-Vision-Based, Tangible-Tokens & Tangibility & Colaboração presencial & TViews & n/a \\
+\hline
+\cite{Corrie_2007_Toward} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
+\hline
+\cite{Song_Vision-Based} & Front-Projected & Vision-Based & Touch & Usuário único & n/a & n/a \\
+\hline
+\cite{Bakker_2007_Weathergods} & Embedded & Tangible-Tokens, Electrical-Based & Tangibility, Touch & Colaboração presencial & n/a & n/a \\
+\hline
 \cite{Stock_2008_A} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
-\cite{Sulaiman_2008_Attribute} & Front-Projected & Pen & Tangibility & Colaboração presencial & Promethean Activboard & n/a \\
-\cite{Terrenghi_2008_Designing} & Embedded & Sensor-Assisted-Vision-Based & Multi-touch, Touch & Colaboração presencial & n/a & n/a \\
-\cite{Tse_2008_Exploring} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
+\hline
 \cite{Wolfe_2008_A} & Rear-Projected & Sensor-Assisted-Vision-Based & Multi-touch, Touch & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Gabrielli_2008_A} & Embedded & Electrical-Based & Touch & Usuário único & n/a & 19” \\
+\hline
+\cite{Miura_A} & Rear-Projected & Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & AwareTable & n/a \\
+\hline
+\cite{Kim_2008_An} & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & u-Table & 59” \\
+\hline
 \cite{Xie_2008_Are} & Embedded & Tangible-Tokens & Tangibility & Colaboração presencial & n/a & n/a \\
-\cite{Xin_Wang_2008_Tabletop} & Rear-Projected & Sensor-Assisted-Vision-Based & Touch & Colaboração presencial & SMART Board & n/a \\
+\hline
+\cite{Sulaiman_2008_Attribute} & Front-Projected & Pen & Tangibility & Colaboração presencial & Promethean Activboard & n/a \\
+\hline
+\cite{Kierkels_2008_Children’S} & Rear-Projected & Tangible-Tokens, Vision-Based & Multi-touch, Tangibility & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Hornecker_2008_Collaboration} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
+\hline
+\cite{Brandl_2008_Combining} & Front-Projected & Pen, Electrical-Based & Gesture, Multi-touch, Tangibility, Touch & Usuário único & DiamondTouch + Anoto Pen & 42” \\
+\hline
+\cite{Al_Mahmud_2008_Designing} & Front-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens & Tangibility & Colaboração presencial & Visual Interaction Platform (VIP) & n/a \\
+\hline
+\cite{Terrenghi_2008_Designing} & Embedded & Sensor-Assisted-Vision-Based & Multi-touch, Touch & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Izadi_2008_Experiences} & Embedded & Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Usuário único & ThinSight & n/a \\
+\hline
+\cite{Tse_2008_Exploring} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
+\hline
 \cite{Yue_Shi_2008_Finger} & Rear-Projected & Sensor-Assisted-Vision-Based & Multi-touch, Touch & Colaboração presencial & uTable & 169” \\
-\cite{Antle_2009_The} & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & EventTable & n/a \\
-\cite{Bartindale_2009_Media} & Rear-Projected & Vision-Based & Multi-touch, Tangibility, Touch & Usuário único & n/a & n/a \\
-\cite{Battocchi_2009_Collaborative} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
-\cite{Battocchi_2009_Collaborative} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
-\cite{Chen_2009_Communicative} & Rear-Projected & Pen & Tangibility & Colaboração presencial & n/a & 55” \\
-\cite{Collins_2009_Understanding} & Embedded & Sensor-Assisted-Vision-Based & Multi-touch, Touch & Colaboração presencial & n/a & 46” \\
-\cite{Echtler_2009_Supporting} & Rear-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Multi-touch, Touch & Colaboração presencial & n/a & n/a \\
-\cite{Fikkert_2009_Feelsound} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
+\hline
+\cite{Schremmer_2008_Hxi} & Embedded & Sensor-Assisted-Vision-Based & Touch & Colaboração presencial & [braccetto] research platform & 46’’ \\
+\hline
+\cite{Sato_2008_Implementation} & Embedded & Vision-Based & Gesture & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Liu_Jun_2008_Improving} & Front-Projected & Pen, Tangible-Tokens, Wearables & Tangibility & Colaboração presencial & n/a & 75” \\
+\hline
+\cite{Leitner_2008_Incretable} & Rear-Projected, Front-Projected & Pen, Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Miller_2008_Interaction} & Rear-Projected & Sound-Based, Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Gesture, Speech, Tangibility & Colaboração presencial & n/a & 83” \\
+\hline
+\cite{Heijboer_2008_Keeping} & Rear-Projected & Tangible-Tokens & Tangibility & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Block_2008_Pen} & Front-Projected & Pen, Sensor-Assisted-Vision-Based, Tangible-Tokens & Tangibility & Usuário único & n/a & n/a \\
+\hline
+\cite{Bezerianos_2008_Presence} & Embedded & Electrical-Based & Touch & Colaboração presencial & n/a & 46” \\
+\hline
+\cite{Piper_2008_Supporting} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
+\hline
+\cite{Xin_Wang_2008_Tabletop} & Rear-Projected & Sensor-Assisted-Vision-Based & Touch & Colaboração presencial & SMART Board & n/a \\
+\hline
+\cite{Maquil_2008_The} & Front-Projected & Tangible-Tokens & Tangibility & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Bredies_2008_The} & Rear-Projected & Sensor-Assisted-Vision-Based & Multi-touch, Touch & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Na_2008_Tmar} & Rear-Projected & Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & ARTable & n/a \\
+\hline
+\cite{M_ller_Tomfelde_2008_Touchers} & Embedded & Sensor-Assisted-Vision-Based & Touch & Colaboração presencial & [braccetto] research platform & 46’’ \\
+\hline
+\cite{Ghanam_2008_Utilizing} & Embedded & Pen, Sound-Based, Sensor-Assisted-Vision-Based & Speech, Touch & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Marshall_2008_When} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
+\hline
+\cite{Sharlin_2009_A} & Front-Projected & Tangible-Tokens, Vision-Based & Tangibility & Usuário único & n/a & n/a \\
+\hline
 \cite{Fleck_2009_Actions} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
-\cite{Hancock_2009_Exploring} & Rear-Projected & Sensor-Assisted-Vision-Based & Multi-touch, Touch & Colaboração presencial & n/a & 72” \\
-\cite{Hilliges_2009_Getting} & Rear-Projected & Pen, Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & n/a & n/a \\
-\cite{Izadi_2009_Thinsight} & Embedded & Sensor-Assisted-Vision-Based & Multi-touch, Touch & Usuário único & n/a & n/a \\
-\cite{Joyner_2009_Tangible} & Rear-Projected & Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & TTT (Tangible Tracking Table) & n/a \\
-\cite{Kane_2009_Bonfire} & Front-Projected & Vision-Based & Gesture, Multi-touch, Tangibility, Touch & Usuário único & n/a & n/a \\
-\cite{Kraaijenbrink_2009_Balancing} & Embedded & Tangible-Tokens & Tangibility & Colaboração presencial & Edutainment Sensor Platform (ESP) & n/a \\
-\cite{Krzywinski_2009_Robotable} & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens & Multi-touch, Tangibility & Colaboração presencial & n/a & n/a \\
-\cite{Kubicki_2009_New} & Rear-Projected & Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & TTT (Tangible Tracking Table) & n/a \\
-\cite{Leonardi_2009_The} & Front-Projected & Pen & Tangibility & Colaboração presencial & n/a & n/a \\
-\cite{M_ller_Tomfelde_2009_Investigating} & Embedded & Sensor-Assisted-Vision-Based & Touch & Colaboração presencial & [braccetto] research platform & 46’’ \\
-\cite{Marshall_2009_Fighting} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
+\hline
 \cite{Micire_2009_Analysis} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
-\cite{Oppl_2009_Tabletop} & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & n/a & n/a \\
-\cite{Pantidi_2009_Is} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
-\cite{Piper_2009_Tabletop} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
-\cite{Piper_2009_Tabletop} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
+\hline
+\cite{Piper_2009_Analyzing} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
+\hline
+\cite{harris2009around_Around } & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
+\hline
+\cite{Kraaijenbrink_2009_Balancing} & Embedded & Tangible-Tokens & Tangibility & Colaboração presencial & Edutainment Sensor Platform (ESP) & n/a \\
+\hline
+\cite{Kane_2009_Bonfire} & Front-Projected & Vision-Based & Gesture, Multi-touch, Tangibility, Touch & Usuário único & n/a & n/a \\
+\hline
 \cite{Rick_2009_Children} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
-\cite{Sato_2009_Photoelastictouch} & Embedded & Vision-Based & Multi-touch, Touch & Colaboração presencial & n/a & n/a \\
-\cite{Stock_2009_The} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
-\cite{Taylor_2009_Turning} & Rear-Projected & Sensor-Assisted-Vision-Based & Multi-touch, Touch & Colaboração presencial & n/a & n/a \\
-\cite{Tokuhisa_2009_Nervixxx} & Rear-Projected & Tangible-Tokens, Wearables & Tangibility & Usuário único & n/a & n/a \\
-\cite{Tuddenham_2009_Websurface} & Front-Projected & Pen & Tangibility & Colaboração presencial & n/a & n/a \\
-\cite{Tuddenham_2009_Websurface} & Front-Projected & Pen & Tangibility & Colaboração presencial & n/a & 48” \\
+\hline
 \cite{Vyas_2009_Collaborative} & Rear-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Multi-touch, Touch & Colaboração presencial & Microsoft Surface & 30” \\
-\cite{Wang_2009_Using} & Rear-Projected & Sensor-Assisted-Vision-Based & Touch & Colaboração presencial & SMART Board & n/a \\
+\hline
+\cite{Battocchi_2009_Collaborative} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
+\hline
+\cite{Battocchi_2009_Collaborative_Fostering } & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
+\hline
+\cite{Chen_2009_Communicative} & Rear-Projected & Pen & Tangibility & Colaboração presencial & n/a & 55” \\
+\hline
+\cite{Dong_2009_Construction} & Rear-Projected & Sensor-Assisted-Vision-Based & Touch & Colaboração presencial & SMART Board & n/a \\
+\hline
+\cite{Hancock_2009_Exploring} & Rear-Projected & Sensor-Assisted-Vision-Based & Multi-touch, Touch & Colaboração presencial & n/a & 72” \\
+\hline
+\cite{Fikkert_2009_Feelsound} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
+\hline
+\cite{Marshall_2009_Fighting} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
+\hline
+\cite{Hilliges_2009_Getting} & Rear-Projected & Pen, Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{M_ller_Tomfelde_2009_Investigating} & Embedded & Sensor-Assisted-Vision-Based & Touch & Colaboração presencial & [braccetto] research platform & 46’’ \\
+\hline
+\cite{Pantidi_2009_Is} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
+\hline
+\cite{Bartindale_2009_Media} & Rear-Projected & Vision-Based & Multi-touch, Tangibility, Touch & Usuário único & n/a & n/a \\
+\hline
+\cite{Tokuhisa_2009_Nervixxx} & Rear-Projected & Tangible-Tokens, Wearables & Tangibility & Usuário único & n/a & n/a \\
+\hline
+\cite{Kubicki_2009_New} & Rear-Projected & Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & TTT (Tangible Tracking Table) & n/a \\
+\hline
+\cite{do2009based_Based } & Front-Projected & Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & n/a & 50” \\
+\hline
+\cite{Sato_2009_Photoelastictouch} & Embedded & Vision-Based & Multi-touch, Touch & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{jermann2009physical_Physical } & Front-Projected & Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Krzywinski_2009_Robotable} & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens & Multi-touch, Tangibility & Colaboração presencial & n/a & n/a \\
+\hline
 \cite{Weiss_2009_Slap} & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens & Multi-touch, Tangibility, Touch & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{julia2009songexplorer_Songexplorer } & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Echtler_2009_Supporting} & Rear-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Multi-touch, Touch & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Oppl_2009_Tabletop} & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Piper_2009_Tabletop} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
+\hline
+\cite{Joyner_2009_Tangible} & Rear-Projected & Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & TTT (Tangible Tracking Table) & n/a \\
+\hline
+\cite{Tuddenham_2009_Territorial} & Front-Projected & Pen & Tangibility & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Leonardi_2009_The} & Front-Projected & Pen & Tangibility & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Stock_2009_The} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
+\hline
+\cite{Antle_2009_The} & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & EventTable & n/a \\
+\hline
+\cite{Izadi_2009_Thinsight} & Embedded & Sensor-Assisted-Vision-Based & Multi-touch, Touch & Usuário único & n/a & n/a \\
+\hline
 \cite{Zufferey_2009_Tinkersheets} & Front-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens & Tangibility & Colaboração presencial & TinkerTable & n/a \\
-\cite{Dong_2009 } & Rear-Projected & Sensor-Assisted-Vision-Based & Touch & Colaboração presencial & SMART Board & n/a \\
-\cite{Sharlin_2009 } & Front-Projected & Tangible-Tokens, Vision-Based & Tangibility & Usuário único & n/a & n/a \\
-\cite{harris2009around } & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
-\cite{do2009based } & Front-Projected & Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & n/a & 50” \\
-\cite{jermann2009physical } & Front-Projected & Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & n/a & n/a \\
-\cite{julia2009songexplorer } & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & n/a & n/a \\
-\cite{Ahn_2010_A} & Embedded & Sensor-Assisted-Vision-Based, Vision-Based & Multi-touch, Touch & Colaboração presencial & n/a & n/a \\
-\cite{Ahsanullah_2010_Design} & Rear-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Multi-touch, Touch & Colaboração presencial & n/a & n/a \\
-\cite{Ahsanullah_2010_Design} & Rear-Projected & Sensor-Assisted-Vision-Based & Multi-touch, Touch & Colaboração presencial & n/a & n/a \\
-\cite{Alves_2010_Reactoon} & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & n/a & n/a \\
-\cite{Antle_2010_Futura} & Rear-Projected & Sensor-Assisted-Vision-Based & Multi-touch, Touch & Colaboração presencial & n/a & 48” \\
-\cite{Belatar_2010_Gestures} & Rear-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Multi-touch, Touch & Colaboração presencial & Microsoft Surface & 30” \\
-\cite{Belatar_2010_Gestures} & Rear-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Multi-touch, Touch & Colaboração presencial & Microsoft Surface & 30” \\
-\cite{Cheng_2010_Interactive} & Embedded & Electrical-Based & Multi-touch, Touch & Colaboração presencial & n/a & 46” \\
-\cite{Collins_2010_File} & Front-Projected & Pen & Tangibility & Colaboração presencial & Mimio Whiteboard & n/a \\
-\cite{Cong_Ning_2010_The} & Rear-Projected & Sensor-Assisted-Vision-Based & Multi-touch, Touch & Colaboração presencial & n/a & n/a \\
-\cite{Do_Lenh_2010_Task} & Front-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & TinkerLamp & n/a \\
-\cite{Fukuchi_2010_Pac-Pac} & Embedded & Vision-Based & Gesture & Colaboração presencial & n/a & 46” \\
-\cite{Gallardo_2010_Tangible} & Rear-Projected & Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & n/a & n/a \\
-\cite{Hancock_2010_Supporting} & Embedded & Electrical-Based & Multi-touch & Colaboração presencial & SMART Table & n/a \\
-\cite{Hilliges_2010_Interaction} & Rear-Projected & Sensor-Assisted-Vision-Based & Touch & Colaboração presencial & SMART Board & n/a \\
-\cite{Inoue_2010_A} & Rear-Projected & Tangible-Tokens, Vision-Based & Tangibility & Usuário único & n/a & n/a \\
-\cite{Inoue_2010_A} & Rear-Projected & Tangible-Tokens, Vision-Based & Tangibility & Usuário único & n/a & n/a \\
-\cite{Isenberg_2010_An} & Rear-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Multi-touch, Touch & Colaboração presencial & Microsoft Surface & 30” \\
-\cite{Jord__2010_The} & Rear-Projected & Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & reacTable & n/a \\
-\cite{Kelly_2010_Solar} & Embedded & Electrical-Based & Multi-touch & Colaboração presencial & SMART Table & n/a \\
-\cite{Kharrufa_2010_Digital} & Front-Projected & Pen & Tangibility & Colaboração presencial & Promethean Activboard & n/a \\
-\cite{Kim_2010_A} & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & u-Table & 59” \\
-\cite{Kim_2010_A} & Rear-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Multi-touch, Touch & Colaboração presencial, Colaboração remota & n/a & n/a \\
+\hline
+\cite{Taylor_2009_Turning} & Rear-Projected & Sensor-Assisted-Vision-Based & Multi-touch, Touch & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Collins_2009_Understanding} & Embedded & Sensor-Assisted-Vision-Based & Multi-touch, Touch & Colaboração presencial & n/a & 46” \\
+\hline
+\cite{Wang_2009_Using} & Rear-Projected & Sensor-Assisted-Vision-Based & Touch & Colaboração presencial & SMART Board & n/a \\
+\hline
+\cite{Tuddenham_2009_Websurface} & Front-Projected & Pen & Tangibility & Colaboração presencial & n/a & 48” \\
+\hline
 \cite{Lebrun_2010_A} & Rear-Projected & Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & TTT (Tangible Tracking Table) & n/a \\
-\cite{Marco_2010_Lifelong} & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & NIKVision & n/a \\
-\cite{Marquardt_2010_What} & Rear-Projected & Sensor-Assisted-Vision-Based, Vision-Based, Wearables & Multi-touch, Touch & Colaboração presencial & Microsoft Surface + Wearables & 30” \\
-\cite{Mitsuhara_2010_Paper-Top} & Front-Projected & Tangible-Tokens, Vision-Based & Tangibility & Usuário único & n/a & n/a \\
-\cite{Nagel_2010_Venice} & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & n/a & n/a \\
-\cite{Olson_2010_It’S} & Rear-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Multi-touch, Touch & Colaboração presencial & Microsoft Surface & 30” \\
-\cite{Pontual_Falc_o_2010_Interfering} & Rear-Projected & Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & reacTable & n/a \\
-\cite{Robinson_2010_Tangible} & Rear-Projected & Pen, Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & n/a & n/a \\
-\cite{Roh_2010_Haptic} & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & u-Table & 59” \\
-\cite{Selim_2010_Egrid} & Rear-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Multi-touch, Touch & Colaboração presencial & Microsoft Surface & 30” \\
-\cite{Shaer_2010_G-Nome} & Rear-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Multi-touch, Touch & Colaboração presencial & Microsoft Surface & 30” \\
-\cite{Shirokura_2010_Robojockey} & Embedded & Pen, Electrical-Based & Multi-touch, Touch & Colaboração presencial & LCD-AD221FB-T by IO Data & 21.5" \\
-\cite{Smith_2010_Raptor} & Rear-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Multi-touch, Touch & Colaboração presencial & Microsoft Surface & 30” \\
+\hline
+\cite{Ahn_2010_A} & Embedded & Sensor-Assisted-Vision-Based, Vision-Based & Multi-touch, Touch & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Kim_2010_A} & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & u-Table & 59” \\
+\hline
+\cite{Inoue_2010_A} & Rear-Projected & Tangible-Tokens, Vision-Based & Tangibility & Usuário único & n/a & n/a \\
+\hline
+\cite{Sokan_2010_A-Cube} & Front-Projected & Tangible-Tokens, Vision-Based & Tangibility & Usuário único & n/a & n/a \\
+\hline
 \cite{Sokan_2010_Alerting} & Front-Projected & Tangible-Tokens, Vision-Based & Tangibility & Usuário único & n/a & n/a \\
-\cite{Sokan_2010_Alerting} & Front-Projected & Tangible-Tokens, Vision-Based & Tangibility & Usuário único & n/a & n/a \\
-\cite{Sultanum_2010_Touching} & Rear-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Multi-touch, Touch & Colaboração presencial & Microsoft Surface & 30” \\
-\cite{Wu_2010_Move,} & Rear-Projected & Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & TTT (Tangible Tracking Table) & n/a \\
-\cite{Wu_2010_Move,} & Rear-Projected & Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & n/a & 50” \\
-\cite{Xamb__2010_Touchtr4Ck} & Rear-Projected & Sensor-Assisted-Vision-Based & Multi-touch, Touch & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Isenberg_2010_An} & Rear-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Multi-touch, Touch & Colaboração presencial & Microsoft Surface & 30” \\
+\hline
+\cite{Ahsanullah_2010_Design} & Rear-Projected & Sensor-Assisted-Vision-Based & Multi-touch, Touch & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Mahmud_2010_Designing} & Front-Projected & Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & n/a & n/a \\
+\hline
 \cite{Yamamoto_2010_Development} & Front-Projected & Pen, Eye-Tracking & Gaze, Tangibility & Usuário único & n/a & n/a \\
-\cite{Yamamoto_2010_Development} & Front-Projected & Pen, Eye-Tracking, Sensor-Assisted-Vision-Based & Gaze, Tangibility & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Yamamoto_2010_Development_Tabletop} & Front-Projected & Pen, Eye-Tracking, Sensor-Assisted-Vision-Based & Gaze, Tangibility & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Kharrufa_2010_Digital} & Front-Projected & Pen & Tangibility & Colaboração presencial & Promethean Activboard & n/a \\
+\hline
+\cite{Selim_2010_Egrid} & Rear-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Multi-touch, Touch & Colaboração presencial & Microsoft Surface & 30” \\
+\hline
+\cite{Collins_2010_File} & Front-Projected & Pen & Tangibility & Colaboração presencial & Mimio Whiteboard & n/a \\
+\hline
+\cite{Antle_2010_Futura} & Rear-Projected & Sensor-Assisted-Vision-Based & Multi-touch, Touch & Colaboração presencial & n/a & 48” \\
+\hline
+\cite{Inoue_2010_Future} & Rear-Projected & Tangible-Tokens, Vision-Based & Tangibility & Usuário único & n/a & n/a \\
+\hline
+\cite{Shaer_2010_G-Nome} & Rear-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Multi-touch, Touch & Colaboração presencial & Microsoft Surface & 30” \\
+\hline
+\cite{Belatar_2010_Gestures} & Rear-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Multi-touch, Touch & Colaboração presencial & Microsoft Surface & 30” \\
+\hline
+\cite{Roh_2010_Haptic} & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & u-Table & 59” \\
+\hline
+\cite{Kim_2010_Hugin} & Rear-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Multi-touch, Touch & Colaboração presencial, Colaboração remota & n/a & n/a \\
+\hline
+\cite{Hilliges_2010_Interaction} & Rear-Projected & Sensor-Assisted-Vision-Based & Touch & Colaboração presencial & SMART Board & n/a \\
+\hline
+\cite{Cheng_2010_Interactive} & Embedded & Electrical-Based & Multi-touch, Touch & Colaboração presencial & n/a & 46” \\
+\hline
+\cite{Pontual_Falc_o_2010_Interfering} & Rear-Projected & Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & reacTable & n/a \\
+\hline
+\cite{Ahsanullah_2010_Investigation} & Rear-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Multi-touch, Touch & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Olson_2010_It’S} & Rear-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Multi-touch, Touch & Colaboração presencial & Microsoft Surface & 30” \\
+\hline
+\cite{Marco_2010_Lifelong} & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & NIKVision & n/a \\
+\hline
+\cite{Wu_2010_Move} & Rear-Projected & Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & TTT (Tangible Tracking Table) & n/a \\
+\hline
+\cite{Fukuchi_2010_Pac-Pac} & Embedded & Vision-Based & Gesture & Colaboração presencial & n/a & 46” \\
+\hline
+\cite{Mitsuhara_2010_Paper-Top} & Front-Projected & Tangible-Tokens, Vision-Based & Tangibility & Usuário único & n/a & n/a \\
+\hline
+\cite{Smith_2010_Raptor} & Rear-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Multi-touch, Touch & Colaboração presencial & Microsoft Surface & 30” \\
+\hline
+\cite{Alves_2010_Reactoon} & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Shirokura_2010_Robojockey} & Embedded & Pen, Electrical-Based & Multi-touch, Touch & Colaboração presencial & LCD-AD221FB-T by IO Data & 21.5" \\
+\hline
+\cite{Morris_2010_Search} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
+\hline
+\cite{Belatar_2010_Sketched} & Rear-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Multi-touch, Touch & Colaboração presencial & Microsoft Surface & 30” \\
+\hline
+\cite{Kelly_2010_Solar} & Embedded & Electrical-Based & Multi-touch & Colaboração presencial & SMART Table & n/a \\
+\hline
+\cite{Hancock_2010_Supporting} & Embedded & Electrical-Based & Multi-touch & Colaboração presencial & SMART Table & n/a \\
+\hline
+\cite{Robinson_2010_Tangible} & Rear-Projected & Pen, Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Gallardo_2010_Tangible} & Rear-Projected & Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Wu_2010_Tangible} & Rear-Projected & Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & n/a & 50” \\
+\hline
+\cite{Do_Lenh_2010_Task} & Front-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & TinkerLamp & n/a \\
+\hline
+\cite{Cong_Ning_2010_The} & Rear-Projected & Sensor-Assisted-Vision-Based & Multi-touch, Touch & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Jord__2010_The} & Rear-Projected & Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & reacTable & n/a \\
+\hline
+\cite{Sultanum_2010_Touching} & Rear-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Multi-touch, Touch & Colaboração presencial & Microsoft Surface & 30” \\
+\hline
+\cite{Xamb__2010_Touchtr4Ck} & Rear-Projected & Sensor-Assisted-Vision-Based & Multi-touch, Touch & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Kubicki_2010_Towards} & Embedded & Tangible-Tokens & Tangibility & Colaboração presencial & TangiSense & 42.5” \\
+\hline
 \cite{Yoshida_2010_Various} & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Gesture, Tangibility & Usuário único & n/a & n/a \\
-\cite{Mahmud_2010 } & Front-Projected & Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & n/a & n/a \\
-\cite{Morris_2010 } & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
-\cite{Kubicki_2010 } & Embedded & Tangible-Tokens & Tangibility & Colaboração presencial & TangiSense & 42.5” \\
-\cite{Al_Qaraghuli_2011_Analysing} & Front-Projected & Pen & Tangibility & Colaboração presencial & Promethean ActivBoard & n/a \\
-\cite{Amano_2011_An} & Embedded & Tangible-Tokens & Tangibility & Usuário único & n/a & n/a \\
-\cite{Antle_2011_Towards} & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & EventTable + Multi-touch & n/a \\
-\cite{Antle_2011_Towards} & Embedded & Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & n/a & n/a \\
-\cite{Beaudouin_Lafon_2011_Lessons} & Embedded & Sensor-Assisted-Vision-Based & Multi-touch, Touch & Colaboração presencial & IntuiFace multitouch & 45” \\
-\cite{Bellarbi_2011_Hand} & Front-Projected & Vision-Based & Gesture, Touch & Usuário único & n/a & n/a \\
-\cite{Bertini_2011_Interactive} & Embedded & Sensor-Assisted-Vision-Based, Vision-Based & Multi-touch, Touch & Colaboração presencial & n/a & n/a \\
-\cite{Bush_2011_Hyperinteractive} & Embedded & Electrical-Based & Multi-touch, Touch & Colaboração presencial & Asus Eee Top & n/a \\
-\cite{Catala_2011_Agoras} & Embedded & Electrical-Based & Multi-touch, Touch & Colaboração presencial & n/a & n/a \\
-\cite{Chaboissier_2011_Realtimechess} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
-\cite{Chen_2011_Mojo} & Front-Projected & Electrical-Based & Touch & Colaboração presencial & n/a & n/a \\
-\cite{Clayphan_2011_Firestorm} & Embedded & Electrical-Based & Multi-touch, Touch & Colaboração presencial & n/a & 46” \\
-\cite{Conversy_2011_Supporting} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
-\cite{Feng_2011_Research} & Embedded & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Tangibility, Touch & Colaboração presencial & n/a & n/a \\
-\cite{Giusti_2011_Dimensions} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
-\cite{Jamil_2011_The} & Rear-Projected & Sensor-Assisted-Vision-Based & Multi-touch, Touch & Colaboração presencial & n/a & 56.5” \\
-\cite{Klinkhammer_2011_Adaptive} & Embedded & Sensor-Assisted-Vision-Based & Multi-touch, Touch & Colaboração presencial & n/a & 65" \\
-\cite{Lee_2011_Zeron} & Rear-Projected, Front-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Gesture, Tangibility & Colaboração presencial & n/a & n/a \\
-\cite{Liu_2011_Umeeting,} & Rear-Projected & Sensor-Assisted-Vision-Based & Multi-touch, Touch & Colaboração presencial & uTable & 169” \\
-\cite{Marshall_2011_Rethinking} & Rear-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Multi-touch, Touch & Colaboração presencial & Microsoft Surface & 30” \\
-\cite{McCrindle_2011_The} & Embedded & Electrical-Based & Multi-touch & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Nagel_2010_Venice} & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Marquardt_2010_What} & Rear-Projected & Sensor-Assisted-Vision-Based, Vision-Based, Wearables & Multi-touch, Touch & Colaboração presencial & Microsoft Surface + Wearables & 30” \\
+\hline
 \cite{Nam_2010_“Dinner} & Rear-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Tangibility & Usuário único & n/a & n/a \\
-\cite{Ning_2010_The} & Rear-Projected & Sensor-Assisted-Vision-Based & Multi-touch, Touch & Colaboração presencial & n/a & n/a \\
-\cite{Oppl_2011_Subject-Oriented} & Rear-Projected & Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & n/a & n/a \\
-\cite{Oppl_2011_Subject-Oriented} & Rear-Projected & Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & n/a & 50” \\
-\cite{Pedersen_2011_Tangible} & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Multi-touch, Tangibility & Colaboração presencial & n/a & n/a \\
-\cite{Qin_2011_Utable} & Rear-Projected & Sensor-Assisted-Vision-Based & Multi-touch, Touch & Colaboração presencial & uTable & 169” \\
-\cite{Richert_2011_Arrange-A-Space} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
-\cite{Rick_2011_Beyond} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
-\cite{Sangyoon_Lee_2011_Effects} & Headset & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & n/a & n/a \\
-\cite{Shaer_2011_Enhancing} & Rear-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Multi-touch, Touch & Colaboração presencial & Microsoft Surface & 30” \\
-\cite{Shen_2010_Puzzletale} & Front-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens & Tangibility & Colaboração presencial & n/a & n/a \\
-\cite{Speelpenning_2011_Exploring} & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & EventTable + Multi-touch & n/a \\
+\hline
 \cite{Takeda_2011_A} & Front-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Touch & Usuário único & n/a & n/a \\
-\cite{Weiss_2011_Usability} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
+\hline
+\cite{Klinkhammer_2011_Adaptive} & Embedded & Sensor-Assisted-Vision-Based & Multi-touch, Touch & Colaboração presencial & n/a & 65" \\
+\hline
+\cite{Catala_2011_Agoras} & Embedded & Electrical-Based & Multi-touch, Touch & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Amano_2011_An} & Embedded & Tangible-Tokens & Tangibility & Usuário único & n/a & n/a \\
+\hline
+\cite{Al_Qaraghuli_2011_Analysing} & Front-Projected & Pen & Tangibility & Colaboração presencial & Promethean ActivBoard & n/a \\
+\hline
+\cite{Richert_2011_Arrange-A-Space} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
+\hline
+\cite{Antle_2011_Balancing} & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & EventTable + Multi-touch & n/a \\
+\hline
+\cite{Rick_2011_Beyond} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
+\hline
+\cite{Giusti_2011_Dimensions} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
+\hline
+\cite{Oppl_2011_Effects} & Rear-Projected & Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & n/a & 50” \\
+\hline
+\cite{Sangyoon_Lee_2011_Effects} & Headset & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Shaer_2011_Enhancing} & Rear-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Multi-touch, Touch & Colaboração presencial & Microsoft Surface & 30” \\
+\hline
+\cite{Speelpenning_2011_Exploring} & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & EventTable + Multi-touch & n/a \\
+\hline
+\cite{Clayphan_2011_Firestorm} & Embedded & Electrical-Based & Multi-touch, Touch & Colaboração presencial & n/a & 46” \\
+\hline
+\cite{Bellarbi_2011_Hand} & Front-Projected & Vision-Based & Gesture, Touch & Usuário único & n/a & n/a \\
+\hline
 \cite{Yamamoto_2011_Hyakunin-Eyesshu} & Front-Projected & Eye-Tracking, Sensor-Assisted-Vision-Based, Vision-Based & Gaze, Multi-touch, Touch & Usuário único & n/a & n/a \\
-\cite{Yamamoto_2011_Hyakunin-Eyesshu} & Front-Projected & Vision-Based & Tangibility & Usuário único & n/a & n/a \\
+\hline
+\cite{Bush_2011_Hyperinteractive} & Embedded & Electrical-Based & Multi-touch, Touch & Colaboração presencial & Asus Eee Top & n/a \\
+\hline
+\cite{Bertini_2011_Interactive} & Embedded & Sensor-Assisted-Vision-Based, Vision-Based & Multi-touch, Touch & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Beaudouin_Lafon_2011_Lessons} & Embedded & Sensor-Assisted-Vision-Based & Multi-touch, Touch & Colaboração presencial & IntuiFace multitouch & 45” \\
+\hline
+\cite{Chen_2011_Mojo} & Front-Projected & Electrical-Based & Touch & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Yamamoto_2011_Onnote} & Front-Projected & Vision-Based & Tangibility & Usuário único & n/a & n/a \\
+\hline
+\cite{Shen_2010_Puzzletale} & Front-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens & Tangibility & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Chaboissier_2011_Realtimechess} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
+\hline
+\cite{Feng_2011_Research} & Embedded & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Tangibility, Touch & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Marshall_2011_Rethinking} & Rear-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Multi-touch, Touch & Colaboração presencial & Microsoft Surface & 30” \\
+\hline
+\cite{Oppl_2011_Subject-Oriented} & Rear-Projected & Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Conversy_2011_Supporting} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
+\hline
+\cite{Pedersen_2011_Tangible} & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Multi-touch, Tangibility & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{McCrindle_2011_The} & Embedded & Electrical-Based & Multi-touch & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Jamil_2011_The} & Rear-Projected & Sensor-Assisted-Vision-Based & Multi-touch, Touch & Colaboração presencial & n/a & 56.5” \\
+\hline
+\cite{Ning_2010_The} & Rear-Projected & Sensor-Assisted-Vision-Based & Multi-touch, Touch & Colaboração presencial & n/a & n/a \\
+\hline
 \cite{Zancanaro_2011_Three} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
-\cite{Ahn_2012_A} & Embedded & Sensor-Assisted-Vision-Based, Vision-Based & Multi-touch, Touch & Colaboração presencial & n/a & 47" \\
-\cite{Alofs_2012_A} & Front-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & n/a & n/a \\
-\cite{Amano_2012_Tangible} & Embedded & Tangible-Tokens, Vision-Based & Tangibility & Usuário único & n/a & n/a \\
-\cite{Anstead_2012_Tabletop} & Embedded & Electrical-Based & Touch & Colaboração presencial & n/a & 50" \\
-\cite{Barnkow_2012_Semiautomatic} & Rear-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Multi-touch, Touch & Colaboração presencial & n/a & 83” \\
-\cite{Bartindale_2012_Storycrate} & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Tangibility & Usuário único & StoryCrate & 65” \\
-\cite{Bautista_2012_Understanding} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
-\cite{Beheshti_2012_Touch,} & Rear-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Multi-touch, Touch & Colaboração presencial & Microsoft Surface & 30” \\
-\cite{Catala_2012_Exploring} & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & Microsoft Surface + Tangibles & 30” \\
-\cite{Cernea_2012_Tangible} & Embedded & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based, Wearables & Multi-touch, Tangibility, Touch & Colaboração presencial & MultiTaction MT550 + Wearable & 55" \\
-\cite{Dalsgaard_2012_Tangible} & Rear-Projected, Front-Projected & Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & n/a & 53” \\
-\cite{Do_Lenh_2012_Tinkerlamp} & Front-Projected & Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & TinkerLamp 2.0 & n/a \\
-\cite{Dolce_2012_Army} & Front-Projected & Vision-Based & Tangibility & Colaboração presencial & n/a & n/a \\
-\cite{Follmer_2012_Jamming} & Rear-Projected & Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Usuário único & n/a & n/a \\
-\cite{Geyer_2012_Harnessing} & Rear-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Multi-touch, Touch & Colaboração presencial & Microsoft Surface & 30” \\
-\cite{Hartelius_2012_Tisch} & Rear-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Multi-touch, Touch & Colaboração presencial & Microsoft Surface & 30” \\
-\cite{Isenberg_2012_Co-Located} & Rear-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Multi-touch, Touch & Colaboração presencial & Microsoft Surface & 30” \\
-\cite{Jamil_2012_Group} & Rear-Projected & Sensor-Assisted-Vision-Based & Multi-touch & Colaboração presencial & n/a & 50” \\
-\cite{Jones_2012_Personal} & Embedded & Sensor-Assisted-Vision-Based, Vision-Based & Multi-touch, Touch & Colaboração presencial & n/a & n/a \\
-\cite{Khalilbeigi_2012_Occlusion-Aware} & Rear-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Multi-touch, Touch & Colaboração presencial & n/a & 46” \\
-\cite{Kirk_2012_At} & Embedded & Electrical-Based & Multi-touch, Touch & Colaboração presencial & n/a & n/a \\
-\cite{Laviole_2012_Papart} & Front-Projected & Pen, Sensor-Assisted-Vision-Based, Vision-Based & Gesture, Multi-touch, Tangibility, Touch & Usuário único & n/a & n/a \\
-\cite{Li_2012_Supporting} & Front-Projected & Pen, Sensor-Assisted-Vision-Based & Speech, Tangibility & Colaboração presencial & TinkerLamp & n/a \\
-\cite{M_ller_Tomfelde_2011_Interacting} & Embedded & Sensor-Assisted-Vision-Based & Touch & Colaboração presencial & [braccetto] research platform & 46’’ \\
-\cite{Manshad_2012_Trackable} & n/a & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Usuário único & n/a & n/a \\
-\cite{Maquil_2012_Collaborative} & Rear-Projected & Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & n/a & 50” \\
-\cite{Matulic_2012_Supporting} & Front-Projected & Pen, Electrical-Based & Gesture, Multi-touch, Tangibility, Touch & Usuário único & DiamondTouch + Anoto Pen & 42” \\
-\cite{McGrath_2012_Branch-Explore-Merge} & Multi-Device, Rear-Projected & Sensor-Assisted-Vision-Based & Multi-touch, Touch & Colaboração presencial, Colaboração remota & n/a & 40" \\
-\cite{Rodrigues_2012_Augmented} & Rear-Projected & Sensor-Assisted-Vision-Based & Multi-touch & Colaboração presencial & n/a & n/a \\
-\cite{Sangsuriyachot_2012_Novel} & Rear-Projected & Sensor-Assisted-Vision-Based & Gesture, Multi-touch, Touch & Usuário único & n/a & 45” \\
-\cite{Schneider_2012_Brainexplorer} & Rear-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Multi-touch, Touch & Colaboração presencial & Microsoft Surface & 30” \\
-\cite{Schneider_2012_Brainexplorer} & Rear-Projected & Pen, Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & n/a & n/a \\
-\cite{Schneider_2012_Brainexplorer} & Rear-Projected & Pen, Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & n/a & n/a \\
-\cite{Seto_2012_Investigating} & Embedded & Electrical-Based & Multi-touch & Colaboração presencial & SMART Table & 28” \\
-\cite{Spindler_2012_Spatially} & Rear-Projected, Front-Projected & Sensor-Assisted-Vision-Based & Multi-touch, Touch & Colaboração presencial & n/a & n/a \\
-\cite{Tabard_2012_The} & Embedded & Pen, Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & n/a & n/a \\
-\cite{Tozser_2012_Re-Collision} & Rear-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Multi-touch, Touch & Colaboração presencial & Microsoft Surface & 30” \\
+\hline
+\cite{Antle_2011_Towards} & Embedded & Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Liu_2011_Umeeting} & Rear-Projected & Sensor-Assisted-Vision-Based & Multi-touch, Touch & Colaboração presencial & uTable & 169” \\
+\hline
+\cite{Weiss_2011_Usability} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
+\hline
+\cite{Qin_2011_Utable} & Rear-Projected & Sensor-Assisted-Vision-Based & Multi-touch, Touch & Colaboração presencial & uTable & 169” \\
+\hline
+\cite{Lee_2011_Zeron} & Rear-Projected, Front-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Gesture, Tangibility & Colaboração presencial & n/a & n/a \\
+\hline
 \cite{Valdes_2012_A} & Embedded & Tangible-Tokens, Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & Samsung SUR40 & 40” \\
-\cite{Voelker_2012_Understanding} & Rear-Projected & Sensor-Assisted-Vision-Based & Multi-touch, Touch & Usuário único & BendDesk & 42” \\
-\cite{Wachholder_2012_Stakeholder-Driven} & Rear-Projected & Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & n/a & n/a \\
-\cite{Yamamoto_2012_Development} & Front-Projected & Eye-Tracking, Sensor-Assisted-Vision-Based, Vision-Based, Wearables & Gaze, Touch & Usuário único & n/a & n/a \\
-\cite{Yeom_2012_Designing} & Rear-Projected & Sensor-Assisted-Vision-Based & Tangibility & Usuário único & n/a & n/a \\
-\cite{Yoshida_2012_Robojockey} & Embedded & Pen, Sensor-Assisted-Vision-Based & Multi-touch, Touch & Colaboração presencial & n/a & 23” \\
+\hline
+\cite{Ahn_2012_A} & Embedded & Sensor-Assisted-Vision-Based, Vision-Based & Multi-touch, Touch & Colaboração presencial & n/a & 47" \\
+\hline
+\cite{Alofs_2012_A} & Front-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Dolce_2012_Army} & Front-Projected & Vision-Based & Tangibility & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Kirk_2012_At} & Embedded & Electrical-Based & Multi-touch, Touch & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Rodrigues_2012_Augmented} & Rear-Projected & Sensor-Assisted-Vision-Based & Multi-touch & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Schneider_2012_Brainexplorer} & Rear-Projected & Pen, Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{McGrath_2012_Branch-Explore-Merge} & Multi-Device, Rear-Projected & Sensor-Assisted-Vision-Based & Multi-touch, Touch & Colaboração presencial, Colaboração remota & n/a & 40" \\
+\hline
+\cite{Ciocca_2012_Browsing} & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & n/a & 34” \\
+\hline
+\cite{Isenberg_2012_Co-Located} & Rear-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Multi-touch, Touch & Colaboração presencial & Microsoft Surface & 30” \\
+\hline
 \cite{Zancanaro_2012_Co-Narrating} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
-\cite{Buisine_2012 } & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
-\cite{Schmitt_2012 } & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
-\cite{Shaer_2012 } & Rear-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Multi-touch, Touch & Colaboração presencial & Microsoft Surface & 30” \\
-\cite{Coughlan_2012 } & Rear-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Multi-touch, Touch & Colaboração presencial & Microsoft Surface & 30” \\
-\cite{Ciocca_2012 } & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & n/a & 34” \\
-\cite{delbressine2012motivating } & Embedded & Sensor-Assisted-Vision-Based, Vision-Based, Wearables & Tangibility, Touch & Usuário único & n/a & n/a \\
-\cite{bosi2012towards } & Rear-Projected & Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & reacTable & n/a \\
-\cite{Afonso_Jaco_2013_Trains} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
-\cite{Agrawal_2013_Chemicable} & Rear-Projected & Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & n/a & n/a \\
-\cite{Antle_2013_Youtopia} & Embedded & Tangible-Tokens, Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & Samsung SUR40 & 40” \\
-\cite{Augstein_2013_The} & Embedded & Tangible-Tokens, Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & Samsung SUR40 & 40” \\
-\cite{Beheshti_2013_Circuit} & Embedded & Tangible-Tokens, Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & Samsung SUR40 & 40” \\
-\cite{Bellarbi_2013_Hand} & Rear-Projected & Vision-Based & Gesture & Usuário único & n/a & n/a \\
-\cite{Bordin_2013_Touching} & Embedded & Tangible-Tokens, Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & Samsung SUR40 & 40” \\
-\cite{Bortolaso_2013_Ormis} & Embedded & Electrical-Based & Multi-touch, Touch & Colaboração presencial & PQ Labs G4S 55” & n/a \\
-\cite{Dang_2013_Tabletopcars} & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & Microsoft Surface + Tangibles & 30” \\
-\cite{Egawa_2013_Eye-Tracking} & Front-Projected & Eye-Tracking, Vision-Based & Gaze & Colaboração presencial & n/a & n/a \\
-\cite{Fleischmann_2013_Subject-Oriented} & Rear-Projected & Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & n/a & n/a \\
-\cite{Gallardo_2013_Slfiducials} & Rear-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Multi-touch, Touch & Colaboração presencial & n/a & n/a \\
-\cite{Graham_2013_Villains,} & Embedded & Electrical-Based & Multi-touch & Colaboração presencial & n/a & 46” \\
-\cite{Haubner_2013_Detecting} & Rear-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Gesture, Multi-touch, Touch & Colaboração presencial & n/a & n/a \\
-\cite{Hennecke_2013_Investigating} & Rear-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Touch & Usuário único & n/a & n/a \\
-\cite{Heslop_2013_Learning} & Front-Projected & Pen & Tangibility & Colaboração presencial & Promethean ActivBoard & n/a \\
-\cite{Itou_2013_Development} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
-\cite{Jamil_2013_Dynamic} & Rear-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Multi-touch, Touch & Colaboração presencial & n/a & n/a \\
-\cite{Juli__2013_Gestureagents} & Rear-Projected & Tangible-Tokens, Vision-Based & Gesture, Multi-touch, Tangibility, Touch & Colaboração presencial & ReacTable + Gesture & n/a \\
-\cite{Khalilbeigi_2013_Objectop} & Embedded & Tangible-Tokens, Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & Samsung SUR40 & 40” \\
-\cite{Kharrufa_2013_Tables} & Embedded & Electrical-Based & Multi-touch & Colaboração presencial & SMART Table & n/a \\
-\cite{Kim_2013_Mario} & Front-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Gesture, Tangibility & Usuário único & n/a & n/a \\
-\cite{Klompmaker_2013_Towards} & Multi-Device, Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & n/a & n/a \\
-\cite{Kunz_2013_Tangible} & Embedded & Pen, Tangible-Tokens & Tangibility & Colaboração presencial & n/a & n/a \\
-\cite{Lee_2013_Prototype} & Embedded & Tangible-Tokens, Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & Samsung SUR40 & 40” \\
-\cite{Lissermann_2013_Permulin} & Embedded & Vision-Based & Multi-touch, Touch & Colaboração presencial & n/a & n/a \\
-\cite{Matulic_2013_Pen} & Front-Projected & Pen, Electrical-Based & Gesture, Multi-touch, Tangibility, Touch & Usuário único & DiamondTouch + Anoto Pen & 42” \\
-\cite{Noguchi_2013_Evaluation} & Rear-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Gesture, Multi-touch, Touch & Colaboração presencial & n/a & n/a \\
-\cite{Perez_Pelaez_2013_Research} & Front-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Tangibility, Touch & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Maquil_2012_Collaborative} & Rear-Projected & Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & n/a & 50” \\
+\hline
+\cite{Schneider_2012_Combinatorix} & Rear-Projected & Pen, Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Yeom_2012_Designing} & Rear-Projected & Sensor-Assisted-Vision-Based & Tangibility & Usuário único & n/a & n/a \\
+\hline
+\cite{Yamamoto_2012_Development} & Front-Projected & Eye-Tracking, Sensor-Assisted-Vision-Based, Vision-Based, Wearables & Gaze, Touch & Usuário único & n/a & n/a \\
+\hline
+\cite{Schmitt_2012_Dynamic} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
+\hline
+\cite{Catala_2012_Exploring} & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & Microsoft Surface + Tangibles & 30” \\
+\hline
+\cite{Jamil_2012_Group} & Rear-Projected & Sensor-Assisted-Vision-Based & Multi-touch & Colaboração presencial & n/a & 50” \\
+\hline
+\cite{Geyer_2012_Harnessing} & Rear-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Multi-touch, Touch & Colaboração presencial & Microsoft Surface & 30” \\
+\hline
+\cite{Buisine_2012_How} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
+\hline
+\cite{M_ller_Tomfelde_2011_Interacting} & Embedded & Sensor-Assisted-Vision-Based & Touch & Colaboração presencial & [braccetto] research platform & 46’’ \\
+\hline
+\cite{Seto_2012_Investigating} & Embedded & Electrical-Based & Multi-touch & Colaboração presencial & SMART Table & 28” \\
+\hline
+\cite{Follmer_2012_Jamming} & Rear-Projected & Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Usuário único & n/a & n/a \\
+\hline
+\cite{delbressine2012motivating_Motivating } & Embedded & Sensor-Assisted-Vision-Based, Vision-Based, Wearables & Tangibility, Touch & Usuário único & n/a & n/a \\
+\hline
+\cite{Sangsuriyachot_2012_Novel} & Rear-Projected & Sensor-Assisted-Vision-Based & Gesture, Multi-touch, Touch & Usuário único & n/a & 45” \\
+\hline
+\cite{Khalilbeigi_2012_Occlusion-Aware} & Rear-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Multi-touch, Touch & Colaboração presencial & n/a & 46” \\
+\hline
+\cite{Laviole_2012_Papart} & Front-Projected & Pen, Sensor-Assisted-Vision-Based, Vision-Based & Gesture, Multi-touch, Tangibility, Touch & Usuário único & n/a & n/a \\
+\hline
+\cite{Jones_2012_Personal} & Embedded & Sensor-Assisted-Vision-Based, Vision-Based & Multi-touch, Touch & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Schneider_2012_Phylo-Genie} & Rear-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Multi-touch, Touch & Colaboração presencial & Microsoft Surface & 30” \\
+\hline
+\cite{Tozser_2012_Re-Collision} & Rear-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Multi-touch, Touch & Colaboração presencial & Microsoft Surface & 30” \\
+\hline
+\cite{Yoshida_2012_Robojockey} & Embedded & Pen, Sensor-Assisted-Vision-Based & Multi-touch, Touch & Colaboração presencial & n/a & 23” \\
+\hline
+\cite{Barnkow_2012_Semiautomatic} & Rear-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Multi-touch, Touch & Colaboração presencial & n/a & 83” \\
+\hline
+\cite{Spindler_2012_Spatially} & Rear-Projected, Front-Projected & Sensor-Assisted-Vision-Based & Multi-touch, Touch & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Wachholder_2012_Stakeholder-Driven} & Rear-Projected & Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Bartindale_2012_Storycrate} & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Tangibility & Usuário único & StoryCrate & 65” \\
+\hline
+\cite{Matulic_2012_Supporting} & Front-Projected & Pen, Electrical-Based & Gesture, Multi-touch, Tangibility, Touch & Usuário único & DiamondTouch + Anoto Pen & 42” \\
+\hline
+\cite{Li_2012_Supporting} & Front-Projected & Pen, Sensor-Assisted-Vision-Based & Speech, Tangibility & Colaboração presencial & TinkerLamp & n/a \\
+\hline
+\cite{Anstead_2012_Tabletop} & Embedded & Electrical-Based & Touch & Colaboração presencial & n/a & 50" \\
+\hline
+\cite{Dalsgaard_2012_Tangible} & Rear-Projected, Front-Projected & Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & n/a & 53” \\
+\hline
+\cite{Cernea_2012_Tangible} & Embedded & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based, Wearables & Multi-touch, Tangibility, Touch & Colaboração presencial & MultiTaction MT550 + Wearable & 55" \\
+\hline
+\cite{Amano_2012_Tangible} & Embedded & Tangible-Tokens, Vision-Based & Tangibility & Usuário único & n/a & n/a \\
+\hline
+\cite{Coughlan_2012_The} & Rear-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Multi-touch, Touch & Colaboração presencial & Microsoft Surface & 30” \\
+\hline
+\cite{Shaer_2012_The} & Rear-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Multi-touch, Touch & Colaboração presencial & Microsoft Surface & 30” \\
+\hline
+\cite{Tabard_2012_The} & Embedded & Pen, Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Do_Lenh_2012_Tinkerlamp} & Front-Projected & Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & TinkerLamp 2.0 & n/a \\
+\hline
+\cite{Hartelius_2012_Tisch} & Rear-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Multi-touch, Touch & Colaboração presencial & Microsoft Surface & 30” \\
+\hline
+\cite{Beheshti_2012_Touch} & Rear-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Multi-touch, Touch & Colaboração presencial & Microsoft Surface & 30” \\
+\hline
+\cite{bosi2012towards_Towards } & Rear-Projected & Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & reacTable & n/a \\
+\hline
+\cite{Manshad_2012_Trackable} & n/a & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Usuário único & n/a & n/a \\
+\hline
+\cite{Bautista_2012_Understanding} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
+\hline
+\cite{Voelker_2012_Understanding} & Rear-Projected & Sensor-Assisted-Vision-Based & Multi-touch, Touch & Usuário único & BendDesk & 42” \\
+\hline
 \cite{Price_2013_A} & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens & Tangibility & Colaboração presencial & n/a & n/a \\
-\cite{Price_2013_A} & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens & Tangibility & Colaboração presencial & LightTable & n/a \\
-\cite{R_nneberg_2013_Hands-On} & Embedded & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & MultiTaction Cell Advanced (MT467) & 46” \\
-\cite{Riemann_2013_Peritop} & Embedded, Front-Projected & Tangible-Tokens, Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & Samsung SUR40 + Top Projector + Kinect & 40” \\
-\cite{Sakata_2013_Communication} & Rear-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Touch & Colaboração remota & n/a & n/a \\
-\cite{Salvador_Herranz_2013_Management} & Front-Projected & Vision-Based & Multi-touch, Touch & Colaboração presencial & n/a & n/a \\
-\cite{Schneider_2013_Preparing} & Rear-Projected & Pen, Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & n/a & n/a \\
-\cite{Seyed_2013_Skyhunter} & Multi-Device & Tangible-Tokens, Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & Samsung SUR40 + Multi-Device + Kinect & 40” \\
-\cite{Shaer_2013_Designing} & Embedded & Tangible-Tokens, Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & Samsung SUR40 + Sifteo Cubes & 40” \\
-\cite{Shaer_2013_Designing} & Embedded & Tangible-Tokens, Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & Samsung SUR40 & 40” \\
-\cite{Spindler_2013_Dynamic} & Multi-Device, Front-Projected & Pen, Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Tangibility & Usuário único & n/a & n/a \\
-\cite{Sutcliffe_2013_Improving} & Embedded & Electrical-Based, Vision-Based & Multi-touch, Touch & Colaboração presencial & n/a & 60" \\
-\cite{Tarukawa_2013_Multi-View} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
+\hline
+\cite{Agrawal_2013_Chemicable} & Rear-Projected & Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Beheshti_2013_Circuit} & Embedded & Tangible-Tokens, Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & Samsung SUR40 & 40” \\
+\hline
 \cite{Wallace_2013_Collaborative} & Front-Projected & Pen & Tangibility & Colaboração presencial & n/a & n/a \\
-\cite{Wang_2013_Tangible} & Headset & Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Dong_2013_Collaborative} & Headset & Tangible-Tokens & Tangibility & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Sakata_2013_Communication} & Rear-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Touch & Colaboração remota & n/a & n/a \\
+\hline
+\cite{Shaer_2013_Designing} & Embedded & Tangible-Tokens, Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & Samsung SUR40 + Sifteo Cubes & 40” \\
+\hline
+\cite{Haubner_2013_Detecting} & Rear-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Gesture, Multi-touch, Touch & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Itou_2013_Development} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
+\hline
+\cite{Jamil_2013_Dynamic} & Rear-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Multi-touch, Touch & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Spindler_2013_Dynamic} & Multi-Device, Front-Projected & Pen, Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Tangibility & Usuário único & n/a & n/a \\
+\hline
+\cite{Garcia_Sanjuan_2013_Evaluating} & Embedded & Tangible-Tokens, Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & Samsung SUR40 & 40” \\
+\hline
+\cite{Noguchi_2013_Evaluation} & Rear-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Gesture, Multi-touch, Touch & Colaboração presencial & n/a & n/a \\
+\hline
 \cite{Wo_niak_2013_Examining} & Embedded & Tangible-Tokens, Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & Samsung SUR40 & 40” \\
+\hline
+\cite{Egawa_2013_Eye-Tracking} & Front-Projected & Eye-Tracking, Vision-Based & Gaze & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Juli__2013_Gestureagents} & Rear-Projected & Tangible-Tokens, Vision-Based & Gesture, Multi-touch, Tangibility, Touch & Colaboração presencial & ReacTable + Gesture & n/a \\
+\hline
+\cite{Bellarbi_2013_Hand} & Rear-Projected & Vision-Based & Gesture & Usuário único & n/a & n/a \\
+\hline
+\cite{R_nneberg_2013_Hands-On} & Embedded & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & MultiTaction Cell Advanced (MT467) & 46” \\
+\hline
+\cite{Sutcliffe_2013_Improving} & Embedded & Electrical-Based, Vision-Based & Multi-touch, Touch & Colaboração presencial & n/a & 60" \\
+\hline
+\cite{Price_2013_Interview} & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens & Tangibility & Colaboração presencial & LightTable & n/a \\
+\hline
+\cite{Hennecke_2013_Investigating} & Rear-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Touch & Usuário único & n/a & n/a \\
+\hline
+\cite{Heslop_2013_Learning} & Front-Projected & Pen & Tangibility & Colaboração presencial & Promethean ActivBoard & n/a \\
+\hline
 \cite{Xamb__2013_Let’S} & Rear-Projected & Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & reacTable & n/a \\
+\hline
+\cite{Salvador_Herranz_2013_Management} & Front-Projected & Vision-Based & Multi-touch, Touch & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Kim_2013_Mario} & Front-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Gesture, Tangibility & Usuário único & n/a & n/a \\
+\hline
+\cite{Shaer_2013_Moclo} & Embedded & Tangible-Tokens, Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & Samsung SUR40 & 40” \\
+\hline
+\cite{Bla_ica_2013_Mti} & Embedded & Tangible-Tokens, Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & Samsung SUR40 & 40” \\
+\hline
+\cite{Tarukawa_2013_Multi-View} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
+\hline
 \cite{Yamaguchi_2013_Multimedia} & Front-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Multi-touch, Touch & Colaboração presencial & n/a & n/a \\
-\cite{Dong_2013 } & Headset & Tangible-Tokens & Tangibility & Colaboração presencial & n/a & n/a \\
-\cite{Garcia_Sanjuan_2013 } & Embedded & Tangible-Tokens, Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & Samsung SUR40 & 40” \\
-\cite{Bla_ica_2013 } & Embedded & Tangible-Tokens, Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & Samsung SUR40 & 40” \\
-\cite{Ahn_2014_A} & Embedded & Sensor-Assisted-Vision-Based, Vision-Based & Multi-touch, Touch & Colaboração presencial & n/a & n/a \\
-\cite{Akiyama_2014_Projectron} & Embedded, Front-Projected & Vision-Based & Tangibility, Touch & Colaboração presencial & n/a & n/a \\
-\cite{Biskjaer_2014_A} & Rear-Projected, Front-Projected & Tangible-Tokens & Tangibility & Colaboração presencial & n/a & n/a \\
-\cite{Bortolaso_2014_The} & Embedded & Electrical-Based & Multi-touch, Touch & Colaboração presencial & n/a & 55” \\
-\cite{Boton_2014_Supporting} & Embedded, Multi-Device & Electrical-Based & Multi-touch, Touch & Colaboração presencial & n/a & n/a \\
-\cite{Chang_2014_Supporting} & Embedded & Electrical-Based & Multi-touch & Colaboração presencial & n/a & 69” \\
-\cite{Chen_2014_Designing} & Embedded & Tangible-Tokens, Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & Samsung SUR40 & 40” \\
-\cite{Chen_2014_Designing} & Front-Projected & Pen, Sensor-Assisted-Vision-Based & Tangibility & Colaboração presencial & n/a & n/a \\
-\cite{Fan_2014_Exploring} & Rear-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Multi-touch, Touch & Colaboração presencial & Microsoft Surface & 30” \\
+\hline
+\cite{Khalilbeigi_2013_Objectop} & Embedded & Tangible-Tokens, Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & Samsung SUR40 & 40” \\
+\hline
+\cite{Bortolaso_2013_Ormis} & Embedded & Electrical-Based & Multi-touch, Touch & Colaboração presencial & PQ Labs G4S 55” & n/a \\
+\hline
+\cite{Matulic_2013_Pen} & Front-Projected & Pen, Electrical-Based & Gesture, Multi-touch, Tangibility, Touch & Usuário único & DiamondTouch + Anoto Pen & 42” \\
+\hline
+\cite{Riemann_2013_Peritop} & Embedded, Front-Projected & Tangible-Tokens, Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & Samsung SUR40 + Top Projector + Kinect & 40” \\
+\hline
+\cite{Lissermann_2013_Permulin} & Embedded & Vision-Based & Multi-touch, Touch & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Schneider_2013_Preparing} & Rear-Projected & Pen, Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Lee_2013_Prototype} & Embedded & Tangible-Tokens, Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & Samsung SUR40 & 40” \\
+\hline
+\cite{Perez_Pelaez_2013_Research} & Front-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Tangibility, Touch & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Seyed_2013_Skyhunter} & Multi-Device & Tangible-Tokens, Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & Samsung SUR40 + Multi-Device + Kinect & 40” \\
+\hline
+\cite{Gallardo_2013_Slfiducials} & Rear-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Multi-touch, Touch & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Fleischmann_2013_Subject-Oriented} & Rear-Projected & Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Kharrufa_2013_Tables} & Embedded & Electrical-Based & Multi-touch & Colaboração presencial & SMART Table & n/a \\
+\hline
+\cite{Dang_2013_Tabletopcars} & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & Microsoft Surface + Tangibles & 30” \\
+\hline
+\cite{Wang_2013_Tangible} & Headset & Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Kunz_2013_Tangible} & Embedded & Pen, Tangible-Tokens & Tangibility & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Augstein_2013_The} & Embedded & Tangible-Tokens, Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & Samsung SUR40 & 40” \\
+\hline
+\cite{Bordin_2013_Touching} & Embedded & Tangible-Tokens, Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & Samsung SUR40 & 40” \\
+\hline
+\cite{Klompmaker_2013_Towards} & Multi-Device, Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Afonso_Jaco_2013_Trains} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
+\hline
+\cite{Graham_2013_Villains} & Embedded & Electrical-Based & Multi-touch & Colaboração presencial & n/a & 46” \\
+\hline
+\cite{Antle_2013_Youtopia} & Embedded & Tangible-Tokens, Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & Samsung SUR40 & 40” \\
+\hline
 \cite{Fischbach_2014_[Demo]} & Embedded & Tangible-Tokens, Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & Samsung SUR40 & 40” \\
-\cite{Gondo_2014_Soccer} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
-\cite{Grote_2014_Eugenie} & Embedded & Tangible-Tokens, Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & Samsung SUR40 + Active Tangible Tokens & 40” \\
-\cite{Haas_2014_Task} & Embedded & Tangible-Tokens, Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & Samsung SUR40 & 40” \\
-\cite{Halskov_2014_Analysing} & Rear-Projected, Front-Projected & Vision-Based & Tangibility & Colaboração presencial & n/a & n/a \\
-\cite{Hansen_2014_Material} & Rear-Projected & Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial, Usuário único & Radar Table & 52” \\
-\cite{Indratmo_2014_Design} & Embedded & Tangible-Tokens, Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & Samsung SUR40 & 40” \\
-\cite{Lissermann_2014_Permulin} & Embedded, Multi-Device & Sensor-Assisted-Vision-Based, Vision-Based & Multi-touch, Touch & Colaboração presencial & n/a & 52″ \\
-\cite{Martinez_Plasencia_2014_Mistable} & Rear-Projected, Front-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Gesture, Multi-touch, Touch & Colaboração presencial & n/a & n/a \\
-\cite{Mostafapour_2014_Exploring} & Embedded & Electrical-Based & Multi-touch & Colaboração presencial & SMART Table & n/a \\
-\cite{Nuan_in_2014_Real-Time} & Rear-Projected & Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & reacTable & n/a \\
-\cite{Oppl_2013_Facilitating} & Rear-Projected & Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & n/a & n/a \\
-\cite{Patsoule_2014_Interactions} & Rear-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Multi-touch, Touch & Colaboração presencial & Microsoft Surface & 30” \\
-\cite{Pedersen_2014_Expressive} & Rear-Projected & Sound-Based, Sensor-Assisted-Vision-Based, Vision-Based & Multi-touch & Usuário único & n/a & n/a \\
-\cite{Rangoni_2014_Implementing} & Rear-Projected & Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & n/a & 60” \\
-\cite{Roudaki_2014_A} & Embedded & Tangible-Tokens, Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & Samsung SUR40 & 40” \\
-\cite{Salvador_Herranz_2014_A} & Front-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial, Colaboração remota & n/a & 55” \\
-\cite{Scott_2014_Cross-Device} & Embedded, Multi-Device & Sensor-Assisted-Vision-Based & Multi-touch, Touch & Colaboração presencial & n/a & n/a \\
-\cite{Scott_2014_Cross-Device} & Rear-Projected & Vision-Based & Multi-touch, Touch & Colaboração presencial & n/a & n/a \\
-\cite{Seiger_2014_A} & Embedded & Tangible-Tokens, Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & Samsung SUR40 & 40” \\
-\cite{Stapleton_2014_Transforming} & Headset & Tangible-Tokens & Tangibility & Usuário único & n/a & n/a \\
+\hline
 \cite{Tateyama_2014_3D} & Rear-Projected & Vision-Based & Gesture & Usuário único & n/a & n/a \\
-\cite{Tobias_2014_Tangible-Based} & Rear-Projected & Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & n/a & 58” \\
-\cite{Ukil_2014_Re-Defining} & Rear-Projected & Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & n/a & n/a \\
-\cite{Valdes_2014_Exploring} & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & Microsoft Surface + Sifteo Cubes & 30” \\
-\cite{Wachholder_2014_Interactive} & Rear-Projected & Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial, Usuário único & n/a & n/a \\
-\cite{Wu_2014_Using} & Rear-Projected & Sensor-Assisted-Vision-Based & Touch & Colaboração presencial & SMART Board & n/a \\
+\hline
+\cite{Salvador_Herranz_2014_A} & Front-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial, Colaboração remota & n/a & 55” \\
+\hline
+\cite{Biskjaer_2014_A} & Rear-Projected, Front-Projected & Tangible-Tokens & Tangibility & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Roudaki_2014_A} & Embedded & Tangible-Tokens, Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & Samsung SUR40 & 40” \\
+\hline
+\cite{Seiger_2014_A} & Embedded & Tangible-Tokens, Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & Samsung SUR40 & 40” \\
+\hline
+\cite{Ahn_2014_A} & Embedded & Sensor-Assisted-Vision-Based, Vision-Based & Multi-touch, Touch & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Halskov_2014_Analysing} & Rear-Projected, Front-Projected & Vision-Based & Tangibility & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Scott_2014_Cross-Device} & Embedded, Multi-Device & Sensor-Assisted-Vision-Based & Multi-touch, Touch & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Indratmo_2014_Design} & Embedded & Tangible-Tokens, Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & Samsung SUR40 & 40” \\
+\hline
 \cite{Young_2014_Design} & Rear-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Multi-touch, Touch & Colaboração presencial & Microsoft Surface & 30” \\
+\hline
+\cite{Chen_2014_Designing} & Embedded & Tangible-Tokens, Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & Samsung SUR40 & 40” \\
+\hline
+\cite{Grote_2014_Eugenie} & Embedded & Tangible-Tokens, Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & Samsung SUR40 + Active Tangible Tokens & 40” \\
+\hline
+\cite{Fan_2014_Exploring} & Rear-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Multi-touch, Touch & Colaboração presencial & Microsoft Surface & 30” \\
+\hline
+\cite{Mostafapour_2014_Exploring} & Embedded & Electrical-Based & Multi-touch & Colaboração presencial & SMART Table & n/a \\
+\hline
+\cite{Valdes_2014_Exploring} & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & Microsoft Surface + Sifteo Cubes & 30” \\
+\hline
+\cite{Pedersen_2014_Expressive} & Rear-Projected & Sound-Based, Sensor-Assisted-Vision-Based, Vision-Based & Multi-touch & Usuário único & n/a & n/a \\
+\hline
+\cite{Oppl_2013_Facilitating} & Rear-Projected & Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Mart_n_SanJos__2014_Flexible} & Front-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Touch & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Roudaki_2014_A} & Embedded & Tangible-Tokens, Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & Samsung SUR40 & 40” \\
+\hline
+\cite{Rangoni_2014_Implementing} & Rear-Projected & Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & n/a & 60” \\
+\hline
+\cite{Patsoule_2014_Interactions} & Rear-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Multi-touch, Touch & Colaboração presencial & Microsoft Surface & 30” \\
+\hline
+\cite{Wachholder_2014_Interactive} & Rear-Projected & Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial, Usuário único & n/a & n/a \\
+\hline
+\cite{Lebrun_2014_Management} & Embedded & Tangible-Tokens & Tangibility & Usuário único & n/a & n/a \\
+\hline
+\cite{Hansen_2014_Material} & Rear-Projected & Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial, Usuário único & Radar Table & 52” \\
+\hline
+\cite{Martinez_Plasencia_2014_Mistable} & Rear-Projected, Front-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Gesture, Multi-touch, Touch & Colaboração presencial & n/a & n/a \\
+\hline
 \cite{Zancanaro_2014_Noproblem!} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
-\cite{Roudaki_2014 } & Embedded & Tangible-Tokens, Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & Samsung SUR40 & 40” \\
-\cite{Lebrun_2014 } & Embedded & Tangible-Tokens & Tangibility & Usuário único & n/a & n/a \\
-\cite{Mart_n_SanJos__2014 } & Front-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Touch & Colaboração presencial & n/a & n/a \\
-\cite{salim2014tangible } & Front-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & n/a & n/a \\
-\cite{iguchi2014transparent } & Embedded & Tangible-Tokens, Vision-Based & Tangibility & Usuário único & n/a & n/a \\
-\cite{Agarwal_2015_Sketch-Play-Learn} & Rear-Projected & Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & n/a & n/a \\
-\cite{Brock_2015_Interactive} & Embedded & Electrical-Based & Multi-touch, Touch & Colaboração presencial & M2256PW & n/a \\
-\cite{Buchanan_2015_The} & Embedded & Electrical-Based & Multi-touch, Touch & Colaboração presencial & Microsoft Perceptive Pixel & 55" \\
-\cite{Chao_2015_Sensor-Augmented} & Embedded & Tangible-Tokens & Tangibility & Colaboração presencial & n/a & n/a \\
-\cite{Chu_2015_Mapping} & Embedded & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Multi-touch & Colaboração presencial & n/a & n/a \\
-\cite{Garcia_Sanjuan_2015_Around-Device} & Multi-Device & Tangible-Tokens & Tangibility & Colaboração presencial & n/a & n/a \\
-\cite{Granda_2015_Supporting} & Multi-Device, Front-Projected & Pen, Sensor-Assisted-Vision-Based, Vision-Based & Tangibility & Colaboração presencial & n/a & n/a \\
-\cite{Heslop_2015_Evaluating} & Embedded & Electrical-Based & Multi-touch & Colaboração presencial & SMART Table & n/a \\
-\cite{Ibayashi_2015_Dollhouse} & Embedded & Electrical-Based & Multi-touch, Touch & Colaboração presencial & Iiyama ProLite T2735MSC & 27" \\
-\cite{Kubicki_2015_Rfid} & Embedded & Tangible-Tokens & Tangibility & Colaboração presencial & TangiSense & 42.5” \\
+\hline
+\cite{Lissermann_2014_Permulin} & Embedded, Multi-Device & Sensor-Assisted-Vision-Based, Vision-Based & Multi-touch, Touch & Colaboração presencial & n/a & 52″ \\
+\hline
+\cite{Akiyama_2014_Projectron} & Embedded, Front-Projected & Vision-Based & Tangibility, Touch & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Ukil_2014_Re-Defining} & Rear-Projected & Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Nuan_in_2014_Real-Time} & Rear-Projected & Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & reacTable & n/a \\
+\hline
+\cite{Chen_2014_Scisketch} & Front-Projected & Pen, Sensor-Assisted-Vision-Based & Tangibility & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Gondo_2014_Soccer} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
+\hline
+\cite{Boton_2014_Supporting} & Embedded, Multi-Device & Electrical-Based & Multi-touch, Touch & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Chang_2014_Supporting} & Embedded & Electrical-Based & Multi-touch & Colaboração presencial & n/a & 69” \\
+\hline
+\cite{Scott_2014_Surface} & Rear-Projected & Vision-Based & Multi-touch, Touch & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{salim2014tangible_Tangible } & Front-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Tobias_2014_Tangible-Based} & Rear-Projected & Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & n/a & 58” \\
+\hline
+\cite{Haas_2014_Task} & Embedded & Tangible-Tokens, Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & Samsung SUR40 & 40” \\
+\hline
+\cite{Bortolaso_2014_The} & Embedded & Electrical-Based & Multi-touch, Touch & Colaboração presencial & n/a & 55” \\
+\hline
+\cite{Stapleton_2014_Transforming} & Headset & Tangible-Tokens & Tangibility & Usuário único & n/a & n/a \\
+\hline
+\cite{iguchi2014transparent_Transparent } & Embedded & Tangible-Tokens, Vision-Based & Tangibility & Usuário único & n/a & n/a \\
+\hline
+\cite{Wu_2014_Using} & Rear-Projected & Sensor-Assisted-Vision-Based & Touch & Colaboração presencial & SMART Board & n/a \\
+\hline
 \cite{Kusano_2015_3D} & Embedded & Vision-Based & Multi-touch, Touch & Usuário único & n/a & n/a \\
-\cite{Luzardo_2015_Multi-Tabletop} & Multi-Device, Front-Projected & Pen, Sensor-Assisted-Vision-Based, Vision-Based & Tangibility & Colaboração presencial & n/a & n/a \\
-\cite{Maki_2015_Travel} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
-\cite{Maquil_2015_Tangible} & Rear-Projected & Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & n/a & n/a \\
-\cite{Oskamp_2015_Terraguide} & Embedded & Tangible-Tokens, Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & Samsung SUR40 & 40” \\
+\hline
 \cite{Ploskas_2015_A} & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Garcia_Sanjuan_2015_Around-Device} & Multi-Device & Tangible-Tokens & Tangibility & Colaboração presencial & n/a & n/a \\
+\hline
 \cite{Rayar_2015_Art-Chess} & Embedded, Headset & Tangible-Tokens, Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & Samsung SUR40 + Headset & 40” \\
-\cite{Riemann_2015_In-Situ} & Embedded, Front-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Gesture, Multi-touch, Touch & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Ibayashi_2015_Dollhouse} & Embedded & Electrical-Based & Multi-touch, Touch & Colaboração presencial & Iiyama ProLite T2735MSC & 27" \\
+\hline
+\cite{Heslop_2015_Evaluating} & Embedded & Electrical-Based & Multi-touch & Colaboração presencial & SMART Table & n/a \\
+\hline
+\cite{Zhao_2015_Exploring} & Rear-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Multi-touch, Touch & Colaboração presencial & Microsoft Surface & 30” \\
+\hline
+\cite{bottino2015gaine_Gaine—Tangible } & Rear-Projected & Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & n/a & n/a \\
+\hline
 \cite{Samir_2015_Hexart} & Rear-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Gesture, Multi-touch, Touch & Colaboração presencial & n/a & n/a \\
-\cite{Schubert_2015_Tangible} & Rear-Projected & Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Riemann_2015_In-Situ} & Embedded, Front-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Gesture, Multi-touch, Touch & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Brock_2015_Interactive} & Embedded & Electrical-Based & Multi-touch, Touch & Colaboração presencial & M2256PW & n/a \\
+\hline
+\cite{Chu_2015_Mapping} & Embedded & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Multi-touch & Colaboração presencial & n/a & n/a \\
+\hline
 \cite{Takashima_2015_Movementable} & Rear-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Multi-touch, Touch & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Luzardo_2015_Multi-Tabletop} & Multi-Device, Front-Projected & Pen, Sensor-Assisted-Vision-Based, Vision-Based & Tangibility & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Kubicki_2015_Rfid} & Embedded & Tangible-Tokens & Tangibility & Colaboração presencial & TangiSense & 42.5” \\
+\hline
+\cite{Chao_2015_Sensor-Augmented} & Embedded & Tangible-Tokens & Tangibility & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Agarwal_2015_Sketch-Play-Learn} & Rear-Projected & Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & n/a & n/a \\
+\hline
 \cite{van_Erp_2015_Subjective} & Embedded & Tangible-Tokens, Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & Samsung SUR40 + Active Tangibles & 40” \\
-\cite{Zhao_2015 } & Rear-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Multi-touch, Touch & Colaboração presencial & Microsoft Surface & 30” \\
-\cite{bottino2015gaine } & Rear-Projected & Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & n/a & n/a \\
-\cite{Al_Megren_2016_Comparing} & Embedded & Tangible-Tokens, Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & Samsung SUR40 & 40” \\
-\cite{Andalam_2016_Surface} & Embedded & Tangible-Tokens, Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & Samsung SUR40 & 40” \\
-\cite{Anthony_2016_Gestures} & Rear-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & ideum 55 pro & 55" \\
-\cite{Arif_2016_Sparse} & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens & Tangibility, Touch & Colaboração presencial & n/a & n/a \\
-\cite{Augstein_2016_Collaboration} & Embedded & Tangible-Tokens, Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & Samsung SUR40 & 40” \\
-\cite{Baldassarri_2016_Immertableapp} & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Tangibility, Touch & Usuário único & Immertable & n/a \\
-\cite{Bartindale_2016_Tryfilm} & Embedded & Tangible-Tokens, Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & Samsung SUR40 & 40” \\
-\cite{Bugalia_2016_Mixed} & Front-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens & Tangibility & Colaboração presencial & n/a & 107” \\
-\cite{Chan_2016_Envisioning} & Embedded & Electrical-Based & Multi-touch, Touch & Colaboração presencial & Microsoft Perceptive Pixel & 55" \\
-\cite{Chang_2016_Usage} & Embedded & Sensor-Assisted-Vision-Based, Vision-Based & Multi-touch, Touch & Colaboração presencial & n/a & n/a \\
-\cite{Cincuegrani_2016_Physiopucks} & Rear-Projected & Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & reacTable & n/a \\
-\cite{Coppins_2016_Combining} & Embedded & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & MultiTaction Cell Ultra-Thin Bezel (MT553UTB) & 55" \\
-\cite{Ducasse_2016_Tangible} & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Multi-touch, Tangibility & Colaboração presencial & n/a & 39” \\
-\cite{Han_2016_Laserfoot} & Rear-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Multi-touch, Touch & Colaboração presencial & Microsoft Surface & 30” \\
+\hline
+\cite{Granda_2015_Supporting} & Multi-Device, Front-Projected & Pen, Sensor-Assisted-Vision-Based, Vision-Based & Tangibility & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Schubert_2015_Tangible} & Rear-Projected & Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Maquil_2015_Tangible} & Rear-Projected & Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Oskamp_2015_Terraguide} & Embedded & Tangible-Tokens, Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & Samsung SUR40 & 40” \\
+\hline
+\cite{Buchanan_2015_The} & Embedded & Electrical-Based & Multi-touch, Touch & Colaboração presencial & Microsoft Perceptive Pixel & 55" \\
+\hline
+\cite{Maki_2015_Travel} & Front-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & DiamondTouch & 42” \\
+\hline
 \cite{Huang_2016_A} & Embedded, Multi-Device & Tangible-Tokens, Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & Samsung SUR40 + Mobile & 40” \\
-\cite{Jones_2016_Towards} & Rear-Projected & Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & n/a & 58” \\
-\cite{Kajita_2016_Skyanchor} & Rear-Projected & Tangible-Tokens & Tangibility & Usuário único & n/a & n/a \\
-\cite{Kim_2016_Exploring} & Rear-Projected & Sensor-Assisted-Vision-Based, Electrical-Based & Multi-touch & Colaboração presencial & n/a & n/a \\
-\cite{Kubicki_2016_Using} & Embedded & Tangible-Tokens & Tangibility & Colaboração presencial & TangiSense 2 & 42.5” \\
-\cite{Liang_2016_Mobitop} & Embedded, Multi-Device & Electrical-Based & Multi-touch, Touch & Colaboração presencial & n/a & n/a \\
-\cite{Loparev_2016_Bacpack} & Embedded & Sensor-Assisted-Vision-Based, Tangible-Tokens & Multi-touch, Tangibility & Colaboração presencial & 55” Multitaction Cell & 55” \\
-\cite{Mahyar_2016_Ud} & Embedded & Sensor-Assisted-Vision-Based & Multi-touch, Touch & Colaboração presencial & SMART Technology Digital Vision Touch (DViT) tabletop & 28” \\
-\cite{Manshaei_2016_Exploring} & Embedded & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & MultiTaction MT550 & 55" \\
-\cite{Martinez_Maldonado_2016_Cocodes} & Embedded, Multi-Device & Electrical-Based & Multi-touch, Touch & Colaboração presencial & n/a & 40" \\
+\hline
+\cite{Havrez_2016_A} & Embedded & Tangible-Tokens & Tangibility & Colaboração presencial & TangiSense & 42.5” \\
+\hline
 \cite{Mehta_2016_Active} & Rear-Projected & Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & n/a & 53” \\
-\cite{Ming_2016_Calibration} & Embedded, Multi-Device & Electrical-Based, Vision-Based & Multi-touch, Touch & Colaboração remota & n/a & n/a \\
-\cite{Muntean_2016_Design} & Embedded & Tangible-Tokens, Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & Samsung SUR40 & 40” \\
-\cite{Newn_2016_Multimodal} & Front-Projected & Eye-Tracking, Vision-Based & Gaze, Multi-touch, Touch & Usuário único & n/a & 45” \\
-\cite{Salvador_Herranz_2016_On} & Embedded & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial, Colaboração remota & n/a & n/a \\
-\cite{Schneider_2016_Flipping} & Rear-Projected & Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & n/a & n/a \\
+\hline
 \cite{Sugiura_2016_Ar} & Headset & Sensor-Assisted-Vision-Based & Multi-touch, Touch & Usuário único & n/a & n/a \\
+\hline
+\cite{Loparev_2016_Bacpack} & Embedded & Sensor-Assisted-Vision-Based, Tangible-Tokens & Multi-touch, Tangibility & Colaboração presencial & 55” Multitaction Cell & 55” \\
+\hline
+\cite{Ming_2016_Calibration} & Embedded, Multi-Device & Electrical-Based, Vision-Based & Multi-touch, Touch & Colaboração remota & n/a & n/a \\
+\hline
+\cite{Martinez_Maldonado_2016_Cocodes} & Embedded, Multi-Device & Electrical-Based & Multi-touch, Touch & Colaboração presencial & n/a & 40" \\
+\hline
+\cite{Augstein_2016_Collaboration} & Embedded & Tangible-Tokens, Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & Samsung SUR40 & 40” \\
+\hline
+\cite{Coppins_2016_Combining} & Embedded & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & MultiTaction Cell Ultra-Thin Bezel (MT553UTB) & 55" \\
+\hline
+\cite{Al_Megren_2016_Comparing} & Embedded & Tangible-Tokens, Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & Samsung SUR40 & 40” \\
+\hline
+\cite{Muntean_2016_Design} & Embedded & Tangible-Tokens, Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & Samsung SUR40 & 40” \\
+\hline
+\cite{Otto_2016_Dual} & Embedded & Tangible-Tokens, Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & Samsung SUR40 & 40” \\
+\hline
+\cite{Chan_2016_Envisioning} & Embedded & Electrical-Based & Multi-touch, Touch & Colaboração presencial & Microsoft Perceptive Pixel & 55" \\
+\hline
+\cite{Manshaei_2016_Exploring} & Embedded & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & MultiTaction MT550 & 55" \\
+\hline
+\cite{Kim_2016_Exploring} & Rear-Projected & Sensor-Assisted-Vision-Based, Electrical-Based & Multi-touch & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Schneider_2016_Flipping} & Rear-Projected & Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Bottino_2016_Gaine} & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & n/a & 50” \\
+\hline
+\cite{Anthony_2016_Gestures} & Rear-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & ideum 55 pro & 55" \\
+\hline
+\cite{Baldassarri_2016_Immertableapp} & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Tangibility, Touch & Usuário único & Immertable & n/a \\
+\hline
 \cite{Tsujimoto_2016_Ketsuro-Graffiti} & Embedded & Electrical-Based & Touch & Usuário único & n/a & n/a \\
+\hline
+\cite{Han_2016_Laserfoot} & Rear-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Multi-touch, Touch & Colaboração presencial & Microsoft Surface & 30” \\
+\hline
+\cite{Bugalia_2016_Mixed} & Front-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens & Tangibility & Colaboração presencial & n/a & 107” \\
+\hline
+\cite{Liang_2016_Mobitop} & Embedded, Multi-Device & Electrical-Based & Multi-touch, Touch & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Newn_2016_Multimodal} & Front-Projected & Eye-Tracking, Vision-Based & Gaze, Multi-touch, Touch & Usuário único & n/a & 45” \\
+\hline
+\cite{Salvador_Herranz_2016_On} & Embedded & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial, Colaboração remota & n/a & n/a \\
+\hline
+\cite{Cincuegrani_2016_Physiopucks} & Rear-Projected & Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & reacTable & n/a \\
+\hline
 \cite{Wozniak_2016_Ramparts} & Multi-Device & Sensor-Assisted-Vision-Based & Multi-touch, Touch & Colaboração presencial & n/a & n/a \\
+\hline
 \cite{Yoshida_2016_Robojockey} & Embedded & Sensor-Assisted-Vision-Based & Multi-touch, Touch & Colaboração presencial & FlexScan T2351W by EIZO & 23” \\
-\cite{Bottino_2016 } & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & n/a & 50” \\
-\cite{Havrez_2016 } & Embedded & Tangible-Tokens & Tangibility & Colaboração presencial & TangiSense & 42.5” \\
-\cite{Otto_2016 } & Embedded & Tangible-Tokens, Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & Samsung SUR40 & 40” \\
-\cite{Baldassarri_2017_Immertable} & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Usuário único & Immertable & n/a \\
-\cite{Evans_2017_Group} & Embedded & Tangible-Tokens, Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & Samsung SUR40 & 40” \\
-\cite{Giraudeau_2017_Towards} & Front-Projected & Tangible-Tokens & Tangibility & Colaboração presencial & n/a & n/a \\
-\cite{Jamil_2017_Collaborating} & Rear-Projected & Sensor-Assisted-Vision-Based & Multi-touch, Touch & Colaboração presencial, Colaboração remota & n/a & n/a \\
-\cite{Kemmoku_2016_Ar} & Front-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Touch & Usuário único & n/a & n/a \\
-\cite{Kim_2017_Utilizing} & Multi-Device & Electrical-Based & Multi-touch, Touch & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Kajita_2016_Skyanchor} & Rear-Projected & Tangible-Tokens & Tangibility & Usuário único & n/a & n/a \\
+\hline
+\cite{Arif_2016_Sparse} & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens & Tangibility, Touch & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Andalam_2016_Surface} & Embedded & Tangible-Tokens, Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & Samsung SUR40 & 40” \\
+\hline
+\cite{Ducasse_2016_Tangible} & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Multi-touch, Tangibility & Colaboração presencial & n/a & 39” \\
+\hline
+\cite{Jones_2016_Towards} & Rear-Projected & Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & n/a & 58” \\
+\hline
+\cite{Bartindale_2016_Tryfilm} & Embedded & Tangible-Tokens, Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & Samsung SUR40 & 40” \\
+\hline
+\cite{Mahyar_2016_Ud} & Embedded & Sensor-Assisted-Vision-Based & Multi-touch, Touch & Colaboração presencial & SMART Technology Digital Vision Touch (DViT) tabletop & 28” \\
+\hline
+\cite{Chang_2016_Usage} & Embedded & Sensor-Assisted-Vision-Based, Vision-Based & Multi-touch, Touch & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Kubicki_2016_Using} & Embedded & Tangible-Tokens & Tangibility & Colaboração presencial & TangiSense 2 & 42.5” \\
+\hline
 \cite{L_chtefeld_2017_Analysing} & Embedded & Tangible-Tokens, Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & Samsung SUR40 & 40” \\
+\hline
+\cite{Kemmoku_2016_Ar} & Front-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Touch & Usuário único & n/a & n/a \\
+\hline
 \cite{Loparev_2017_Bacpack} & Embedded & Sensor-Assisted-Vision-Based, Tangible-Tokens & Multi-touch, Tangibility & Colaboração presencial & 55” MultiTaction Cell & 55” \\
+\hline
 \cite{Malizia_2017_Block-Oriented} & Multi-Device, Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens & Multi-touch, Touch & Colaboração presencial & n/a & n/a \\
-\cite{Manshaei_2017_Tangible} & Embedded & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & MultiTaction Cell Ultra-Thin Bezel (MT553UTB) & 55" \\
-\cite{Merrad_2017_Reformulating} & Embedded & Tangible-Tokens & Tangibility & Colaboração presencial & TangiSense & 42.5” \\
-\cite{Mohammad_Shuhaili_2017_Visual} & Embedded & Tangible-Tokens, Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & Samsung SUR40 & 40” \\
-\cite{Monticolo_2017_Semantic} & Rear-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Multi-touch, Touch & Colaboração presencial & Microsoft Surface & 30” \\
+\hline
+\cite{Jamil_2017_Collaborating} & Rear-Projected & Sensor-Assisted-Vision-Based & Multi-touch, Touch & Colaboração presencial, Colaboração remota & n/a & n/a \\
+\hline
 \cite{Muntean_2017_Designing} & Embedded & Tangible-Tokens, Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & Samsung SUR40 & 40” \\
-\cite{Sahdev_2017_Ghostid} & Front-Projected & Electrical-Based & Touch & Usuário único & n/a & 10” \\
+\hline
 \cite{Uva_2017_Evaluating} & Front-Projected & Tangible-Tokens, Vision-Based & Tangibility & Usuário único & n/a & n/a \\
-\cite{Walker_2017_Exploring} & Embedded & Tangible-Tokens, Electrical-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & n/a & n/a \\
-\cite{Westendorf_2017_Understanding} & Embedded & Pen, Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & MultiTaction Cell Ultra-Thin Bezel (MT553UTB) x4 & 120” \\
+\hline
 \cite{Xamb__2017_Experience} & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens & Multi-touch, Tangibility & Colaboração presencial & TuneTable & n/a \\
-\cite{Turchi_2017 } & Front-Projected & Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & n/a & n/a \\
-\cite{Huang_2017 } & Embedded, Multi-Device & Tangible-Tokens, Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & Samsung SUR40 + Tablet & 40” \\
-\cite{Bouabid_2018_Study} & Embedded & Tangible-Tokens & Tangibility & Colaboração presencial, Colaboração remota & n/a & n/a \\
-\cite{Cherek_2018_Tangible} & Embedded & Electrical-Based & Multi-touch, Touch & Colaboração presencial & Microsoft’s Surface Hub 84" & 84” \\
-\cite{Clayphan_2018_Comparing} & Embedded & Electrical-Based & Multi-touch & Colaboração presencial & n/a & 46” \\
-\cite{Ducasse_2018_Botmap} & Embedded & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & MultiTaction MT420S & 42” \\
-\cite{falc_o_2018_Feedback} & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens & Tangibility & Colaboração presencial & LightTable & n/a \\
-\cite{Fujinami_2018_Painting} & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens & Tangibility & Usuário único & UnicrePaint & n/a \\
-\cite{Guerriero_2018_Bim4Vet,} & Embedded & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & MultiTaction MT555UTB & 55" \\
-\cite{Hachisu_2018_Spirosurface} & Front-Projected & Electrical-Based & Touch & Usuário único & n/a & n/a \\
-\cite{Hakoda_2018_Kawaluü} & Front-Projected & Pen, Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & n/a & n/a \\
-\cite{Homaeian_2018_Group} & Embedded & Sensor-Assisted-Vision-Based & Multi-touch, Touch & Colaboração presencial & n/a & 54” \\
+\hline
+\cite{Walker_2017_Exploring} & Embedded & Tangible-Tokens, Electrical-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Sahdev_2017_Ghostid} & Front-Projected & Electrical-Based & Touch & Usuário único & n/a & 10” \\
+\hline
+\cite{Evans_2017_Group} & Embedded & Tangible-Tokens, Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & Samsung SUR40 & 40” \\
+\hline
+\cite{Baldassarri_2017_Immertable} & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Usuário único & Immertable & n/a \\
+\hline
+\cite{Huang_2017_Investigating} & Embedded, Multi-Device & Tangible-Tokens, Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & Samsung SUR40 + Tablet & 40” \\
+\hline
+\cite{Merrad_2017_Reformulating} & Embedded & Tangible-Tokens & Tangibility & Colaboração presencial & TangiSense & 42.5” \\
+\hline
+\cite{Monticolo_2017_Semantic} & Rear-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Multi-touch, Touch & Colaboração presencial & Microsoft Surface & 30” \\
+\hline
+\cite{Manshaei_2017_Tangible} & Embedded & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & MultiTaction Cell Ultra-Thin Bezel (MT553UTB) & 55" \\
+\hline
+\cite{Turchi_2017_Tapas} & Front-Projected & Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Giraudeau_2017_Towards} & Front-Projected & Tangible-Tokens & Tangibility & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Westendorf_2017_Understanding} & Embedded & Pen, Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & MultiTaction Cell Ultra-Thin Bezel (MT553UTB) x4 & 120” \\
+\hline
+\cite{Kim_2017_Utilizing} & Multi-Device & Electrical-Based & Multi-touch, Touch & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Mohammad_Shuhaili_2017_Visual} & Embedded & Tangible-Tokens, Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & Samsung SUR40 & 40” \\
+\hline
 \cite{Kemmoku_2018_A} & Front-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Touch & Usuário único & n/a & n/a \\
-\cite{Klinkhammer_2018_Mine,} & Embedded & Electrical-Based & Multi-touch, Touch & Colaboração presencial & n/a & 65” \\
-\cite{Maquil_2018_Towards} & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & n/a & 58” \\
-\cite{Merz_2018_Clipworks} & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens & Tangibility & Colaboração presencial & n/a & n/a \\
-\cite{Mohammad_Shuhaili_2018_An} & Embedded & Tangible-Tokens, Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & Samsung SUR40 & 40” \\
-\cite{Otsuki_2018_Crossi} & Multi-Device, Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens & Multi-touch, Tangibility, Touch & Colaboração presencial & n/a & n/a \\
-\cite{Pontual_Falc_o_2018_Tangible} & Embedded & Tangible-Tokens, Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & Samsung SUR40 & 40” \\
-\cite{Riemann_2018_Overtop} & Embedded, Headset, Front-Projected & Vision-Based & Gesture & Usuário único & OverTop & n/a \\
-\cite{Riemann_2018_Overtop} & Embedded, Headset, Front-Projected & Sensor-Assisted-Vision-Based, Electrical-Based, Vision-Based & Gesture, Multi-touch, Tangibility, Touch & Usuário único & n/a & n/a \\
-\cite{Schwartz_2018_Designing} & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Gesture, Tangibility & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Lin_2018_A} & Embedded, Multi-Device, Rear-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & n/a & n/a \\
+\hline
 \cite{Sugiura_2018_An} & Embedded & Sensor-Assisted-Vision-Based & Multi-touch, Touch & Colaboração presencial & Flatfrog Multitouch 3200 & 32" \\
-\cite{Woodward_2018_Investigating} & Embedded & Tangible-Tokens, Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & Samsung SUR40 & 40” \\
+\hline
+\cite{Mohammad_Shuhaili_2018_An} & Embedded & Tangible-Tokens, Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & Samsung SUR40 & 40” \\
+\hline
+\cite{Guerriero_2018_Bim4Vet} & Embedded & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & MultiTaction MT555UTB & 55" \\
+\hline
+\cite{Ducasse_2018_Botmap} & Embedded & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & MultiTaction MT420S & 42” \\
+\hline
 \cite{Zheng_2018_Bridging} & Embedded & Sound-Based, Electrical-Based & Multi-touch, Speech, Touch & Colaboração presencial & n/a & n/a \\
-\cite{Kaya_2018 } & Front-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Tangibility, Touch & Colaboração presencial & InitialInsights & n/a \\
-\cite{Lin_2018 } & Embedded, Multi-Device, Rear-Projected & Electrical-Based & Multi-touch, Touch & Colaboração presencial & n/a & n/a \\
-\cite{Bonillo_2019_Kitvision} & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & NIKVision & n/a \\
-\cite{Cerezo_2019_Guidelines} & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & NIKVision & n/a \\
-\cite{Cimadevila_2019_Tangible} & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & n/a & n/a \\
-\cite{de_Tinguy_2019_Toward} & Headset & Tangible-Tokens & Tangibility & Usuário único & n/a & n/a \\
-\cite{DeLong_2019_Design} & Embedded & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & MultiTaction MT550 & 55" \\
-\cite{Gallardo_2019_Development} & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & NIKVision & n/a \\
-\cite{Gao_2019_Pati} & Front-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Gesture, Multi-touch, Touch & Usuário único & n/a & n/a \\
-\cite{Inagaki_2019_Pop-Up} & Front-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens & Tangibility & Usuário único & n/a & n/a \\
-\cite{Law_2019_Side-By-Side} & Rear-Projected & Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & reacTable & n/a \\
-\cite{Leon_2019_Tangible} & Embedded & Electrical-Based & Multi-touch, Touch & Colaboração presencial & n/a & n/a \\
-\cite{Long_2019_Trajectories} & Rear-Projected & Tangible-Tokens & Tangibility & Colaboração presencial & TuneTable & n/a \\
-\cite{Makiguchi_2019_Interactive} & Front-Projected & Eye-Tracking, Electrical-Based & Multi-touch, Touch & Colaboração presencial & n/a & n/a \\
-\cite{Manshaei_2019_Tangible} & Embedded & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & MultiTaction Cell Ultra-Thin Bezel (MT553UTB) & 55" \\
-\cite{Manshaei_2019_Tangible} & Embedded & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & MultiTaction Cell Ultra-Thin Bezel (MT553UTB) x3 & 90” \\
-\cite{Mendoza_2019_Tangitime} & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens & Tangibility & Colaboração presencial & n/a & n/a \\
-\cite{Preuss_2019_E-Dub-A} & Rear-Projected & Tangible-Tokens, Vision-Based & Tangibility & Usuário único & n/a & n/a \\
-\cite{Rekik_2019_Understanding} & Embedded & Tangible-Tokens & Tangibility & Colaboração presencial & TangiSense 2 & 42.5” \\
-\cite{Sakamoto_2019_Code} & Rear-Projected & Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & n/a & n/a \\
-\cite{Salimian_2019_Mp} & Embedded, Headset & Electrical-Based & Multi-touch, Touch & Colaboração presencial, Colaboração remota & n/a & n/a \\
+\hline
+\cite{Merz_2018_Clipworks} & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens & Tangibility & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Clayphan_2018_Comparing} & Embedded & Electrical-Based & Multi-touch & Colaboração presencial & n/a & 46” \\
+\hline
+\cite{Otsuki_2018_Crossi} & Multi-Device, Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens & Multi-touch, Tangibility, Touch & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Schwartz_2018_Designing} & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Gesture, Tangibility & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{falc_o_2018_Feedback} & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens & Tangibility & Colaboração presencial & LightTable & n/a \\
+\hline
+\cite{Homaeian_2018_Group} & Embedded & Sensor-Assisted-Vision-Based & Multi-touch, Touch & Colaboração presencial & n/a & 54” \\
+\hline
+\cite{Woodward_2018_Investigating} & Embedded & Tangible-Tokens, Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & Samsung SUR40 & 40” \\
+\hline
+\cite{Hakoda_2018_Kawaluü} & Front-Projected & Pen, Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Kaya_2018_Low-Fidelity} & Front-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Tangibility, Touch & Colaboração presencial & InitialInsights & n/a \\
+\hline
+\cite{Klinkhammer_2018_Mine} & Embedded & Electrical-Based & Multi-touch, Touch & Colaboração presencial & n/a & 65” \\
+\hline
+\cite{Riemann_2018_Overtop} & Embedded, Headset, Front-Projected & Vision-Based & Gesture & Usuário único & OverTop & n/a \\
+\hline
+\cite{Fujinami_2018_Painting} & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens & Tangibility & Usuário único & UnicrePaint & n/a \\
+\hline
+\cite{Riemann_2018_Overtop} & Embedded, Headset, Front-Projected & Sensor-Assisted-Vision-Based, Electrical-Based, Vision-Based & Gesture, Multi-touch, Tangibility, Touch & Usuário único & n/a & n/a \\
+\hline
+\cite{Hachisu_2018_Spirosurface} & Front-Projected & Electrical-Based & Touch & Usuário único & n/a & n/a \\
+\hline
+\cite{Bouabid_2018_Study} & Embedded & Tangible-Tokens & Tangibility & Colaboração presencial, Colaboração remota & n/a & n/a \\
+\hline
+\cite{Cherek_2018_Tangible} & Embedded & Electrical-Based & Multi-touch, Touch & Colaboração presencial & Microsoft’s Surface Hub 84" & 84” \\
+\hline
+\cite{Pontual_Falc_o_2018_Tangible} & Embedded & Tangible-Tokens, Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & Samsung SUR40 & 40” \\
+\hline
+\cite{Maquil_2018_Towards} & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & n/a & 58” \\
+\hline
 \cite{Selwyn_Smith_2019_Co-Located} & Embedded & Electrical-Based & Multi-touch, Touch & Colaboração presencial & Promethean ActivTable & 46” \\
+\hline
+\cite{Sakamoto_2019_Code} & Rear-Projected & Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{DeLong_2019_Design} & Embedded & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & MultiTaction MT550 & 55" \\
+\hline
+\cite{Gallardo_2019_Development} & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & NIKVision & n/a \\
+\hline
+\cite{Preuss_2019_E-Dub-A} & Rear-Projected & Tangible-Tokens, Vision-Based & Tangibility & Usuário único & n/a & n/a \\
+\hline
 \cite{Ssin_2019_Geogate} & Embedded, Headset & Sensor-Assisted-Vision-Based, Tangible-Tokens & Multi-touch, Tangibility, Touch & Usuário único & n/a & n/a \\
-\cite{Cerezo_2019 } & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & NIKVision & n/a \\
-\cite{Anthony_2019 } & Embedded & Tangible-Tokens, Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & Samsung SUR40 & 40” \\
-\cite{Baldassarri_2020_Toward} & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & NIKVision & n/a \\
-\cite{Gesslein_2020_Pen-Based} & Embedded, Headset & Pen, Eye-Tracking, Electrical-Based, Wearables & Gaze, Gesture, Multi-touch, Tangibility, Touch & Usuário único & n/a & n/a \\
-\cite{Guo_2020_Comparing} & Front-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens & Multi-touch, Tangibility & Usuário único & n/a & n/a \\
-\cite{Heinemann_2020_Eye-Tracking} & Embedded & Tangible-Tokens, Electrical-Based & Tangibility, Touch & Colaboração presencial & TABULA project & n/a \\
-\cite{Huang_2019_A} & Embedded, Multi-Device & Tangible-Tokens, Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & Samsung SUR40 + Mobile & 40” \\
-\cite{Huang_2020_Coistable} & Embedded & Tangible-Tokens, Electrical-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & n/a & n/a \\
-\cite{Huang_2020_Coistable} & Embedded & Tangible-Tokens, Electrical-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & n/a & n/a \\
-\cite{Mendoza_2020_Evaluating} & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & TangiTime & 53” \\
-\cite{Niu_2020_Investigating} & Embedded & Electrical-Based & Multi-touch, Touch & Colaboração presencial & Microsoft Perceptive Pixel & 55" \\
-\cite{Plijnaer_2020_Truesight} & Embedded & Tangible-Tokens & Tangibility & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Cerezo_2019_Guidelines} & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & NIKVision & n/a \\
+\hline
+\cite{Makiguchi_2019_Interactive} & Front-Projected & Eye-Tracking, Electrical-Based & Multi-touch, Touch & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Bonillo_2019_Kitvision} & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & NIKVision & n/a \\
+\hline
+\cite{Salimian_2019_Mp} & Embedded, Headset & Electrical-Based & Multi-touch, Touch & Colaboração presencial, Colaboração remota & n/a & n/a \\
+\hline
+\cite{Gao_2019_Pati} & Front-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Gesture, Multi-touch, Touch & Usuário único & n/a & n/a \\
+\hline
+\cite{Anthony_2019_Physical} & Embedded & Tangible-Tokens, Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & Samsung SUR40 & 40” \\
+\hline
+\cite{Inagaki_2019_Pop-Up} & Front-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens & Tangibility & Usuário único & n/a & n/a \\
+\hline
+\cite{Law_2019_Side-By-Side} & Rear-Projected & Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & reacTable & n/a \\
+\hline
+\cite{Manshaei_2019_Tangible} & Embedded & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & MultiTaction Cell Ultra-Thin Bezel (MT553UTB) x3 & 90” \\
+\hline
+\cite{Cimadevila_2019_Tangible} & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Leon_2019_Tangible} & Embedded & Electrical-Based & Multi-touch, Touch & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Manshaei_2019_Tangible_Tensors} & Embedded & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & MultiTaction Cell Ultra-Thin Bezel (MT553UTB) & 55" \\
+\hline
+\cite{Mendoza_2019_Tangitime} & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens & Tangibility & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Cerezo_2019_The} & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & NIKVision & n/a \\
+\hline
+\cite{de_Tinguy_2019_Toward} & Headset & Tangible-Tokens & Tangibility & Usuário único & n/a & n/a \\
+\hline
+\cite{Long_2019_Trajectories} & Rear-Projected & Tangible-Tokens & Tangibility & Colaboração presencial & TuneTable & n/a \\
+\hline
+\cite{Rekik_2019_Understanding} & Embedded & Tangible-Tokens & Tangibility & Colaboração presencial & TangiSense 2 & 42.5” \\
+\hline
 \cite{Sikorski_2020_A} & Headset & Sensor-Assisted-Vision-Based, Vision-Based & Gesture & Usuário único & Microsoft HoloLens & n/a \\
+\hline
+\cite{Huang_2019_A} & Embedded, Multi-Device & Tangible-Tokens, Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & Samsung SUR40 + Mobile & 40” \\
+\hline
 \cite{Veldhuis_2020_Coda} & Embedded & Tangible-Tokens, Electrical-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & n/a & 19” \\
+\hline
+\cite{Huang_2020_Coistable} & Embedded & Tangible-Tokens, Electrical-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Guo_2020_Comparing} & Front-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens & Multi-touch, Tangibility & Usuário único & n/a & n/a \\
+\hline
+\cite{horn2020engaging_Engaging } & Embedded & Electrical-Based & Multi-touch, Touch & Colaboração presencial & 3M™ Multi-Touch Display & 46’’ \\
+\hline
+\cite{Mendoza_2020_Evaluating} & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & TangiTime & 53” \\
+\hline
+\cite{Heinemann_2020_Eye-Tracking} & Embedded & Tangible-Tokens, Electrical-Based & Tangibility, Touch & Colaboração presencial & TABULA project & n/a \\
+\hline
+\cite{Niu_2020_Investigating} & Embedded & Electrical-Based & Multi-touch, Touch & Colaboração presencial & Microsoft Perceptive Pixel & 55" \\
+\hline
+\cite{Gesslein_2020_Pen-Based} & Embedded, Headset & Pen, Eye-Tracking, Electrical-Based, Wearables & Gaze, Gesture, Multi-touch, Tangibility, Touch & Usuário único & n/a & n/a \\
+\hline
+\cite{Huang_2020_Ptpg} & Embedded & Tangible-Tokens, Electrical-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & n/a & n/a \\
+\hline
 \cite{Xu_2020_Recognizing} & Embedded & Eye-Tracking, Electrical-Based & Gaze, Multi-touch & Usuário único & n/a & 102” \\
-\cite{horn2020engaging } & Embedded & Electrical-Based & Multi-touch, Touch & Colaboração presencial & 3M™ Multi-Touch Display & 46’’ \\
-\cite{Dasu_2021_Sea} & Embedded & Electrical-Based & Multi-touch, Touch & Colaboração presencial & 3M 65” touch-table & 65" \\
-\cite{de_Franceschi_2021_Tabletop} & Embedded & Electrical-Based & Multi-touch, Touch & Colaboração presencial & n/a & n/a \\
-\cite{Ens_2021_Uplift} & Embedded, Headset & Eye-Tracking, Tangible-Tokens, Electrical-Based, Vision-Based, Wearables & Gaze, Gesture, Multi-touch, Tangibility, Touch & Colaboração presencial & n/a & 46" \\
-\cite{Ishihara_2021_Learning} & Headset & Sensor-Assisted-Vision-Based, Vision-Based & Gesture & Usuário único & Microsoft HoloLens & n/a \\
-\cite{Kaag_2021_Designing} & Embedded & Electrical-Based & Multi-touch, Touch & Colaboração presencial & n/a & n/a \\
-\cite{Kuwahara_2021_Learning} & Front-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Tangibility & Colaboração presencial & n/a & n/a \\
-\cite{M_ndez_Mendoza_2021_Designing} & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & TangiTime & 53” \\
-\cite{Merrad_2021_Rfid-Based} & Embedded & Tangible-Tokens & Tangibility & Colaboração presencial & TangiSense 2 & 42.5” \\
-\cite{Porfirio_2021_Figaro} & Rear-Projected & Sound-Based, Sensor-Assisted-Vision-Based & Multi-touch, Speech, Tangibility, Touch & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Baldassarri_2020_Toward} & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & NIKVision & n/a \\
+\hline
+\cite{Plijnaer_2020_Truesight} & Embedded & Tangible-Tokens & Tangibility & Colaboração presencial & n/a & n/a \\
+\hline
 \cite{Soni_2021_Affording} & Embedded & Tangible-Tokens, Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & Samsung SUR40 & 40” \\
+\hline
 \cite{Wise_2021_Design} & Embedded & Tangible-Tokens, Sensor-Assisted-Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & Samsung SUR40 & 40” \\
-\cite{Cerezo_2022_Working} & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & NIKVision & n/a \\
-\cite{Clarinval_2021_Introducing} & Front-Projected & Tangible-Tokens & Tangibility & Colaboração presencial & n/a & n/a \\
-\cite{Li_2022_Tangiblegrid} & n/a & Tangible-Tokens & Tangibility & Usuário único & n/a & n/a \\
-\cite{Manshaei_2022_Tangible} & Embedded & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & MultiTaction Cell Ultra-Thin Bezel (MT553UTB) x3 & 90” \\
-\cite{Umezu_2022_Tangible} & Embedded & Sensor-Assisted-Vision-Based, Vision-Based & Tangibility & Colaboração presencial & n/a & 55" \\
-\cite{Wu_2022_Players} & Front-Projected & Tangible-Tokens, Electrical-Based, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Kaag_2021_Designing} & Embedded & Electrical-Based & Multi-touch, Touch & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{M_ndez_Mendoza_2021_Designing} & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & TangiTime & 53” \\
+\hline
+\cite{Porfirio_2021_Figaro} & Rear-Projected & Sound-Based, Sensor-Assisted-Vision-Based & Multi-touch, Speech, Tangibility, Touch & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Ishihara_2021_Learning} & Headset & Sensor-Assisted-Vision-Based, Vision-Based & Gesture & Usuário único & Microsoft HoloLens & n/a \\
+\hline
+\cite{Kuwahara_2021_Learning} & Front-Projected & Sensor-Assisted-Vision-Based, Vision-Based & Tangibility & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Merrad_2021_Rfid-Based} & Embedded & Tangible-Tokens & Tangibility & Colaboração presencial & TangiSense 2 & 42.5” \\
+\hline
+\cite{Dasu_2021_Sea} & Embedded & Electrical-Based & Multi-touch, Touch & Colaboração presencial & 3M 65” touch-table & 65" \\
+\hline
+\cite{de_Franceschi_2021_Tabletop} & Embedded & Electrical-Based & Multi-touch, Touch & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Ens_2021_Uplift} & Embedded, Headset & Eye-Tracking, Tangible-Tokens, Electrical-Based, Vision-Based, Wearables & Gaze, Gesture, Multi-touch, Tangibility, Touch & Colaboração presencial & n/a & 46" \\
+\hline
 \cite{Yan_2022_Enabling} & Embedded & Tangible-Tokens & Tangibility & Colaboração presencial & n/a & n/a \\
-\cite{Zappi_2022_The} & Rear-Projected & Sensor-Assisted-Vision-Based & Multi-touch, Touch & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Barros_Blanco_2022_How} & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & NIKVision & n/a \\
+\hline
+\cite{Kobayashi_2022_Instruction} & Front-Projected & Vision-Based & Gesture & Usuário único & n/a & n/a \\
+\hline
+\cite{Clarinval_2021_Introducing} & Front-Projected & Tangible-Tokens & Tangibility & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Wu_2022_Players} & Front-Projected & Tangible-Tokens, Electrical-Based, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & n/a & n/a \\
+\hline
 \cite{Zimmerer_2022_Reducing} & Embedded & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Multi-touch, Speech, Tangibility, Touch & Colaboração presencial & MultiTaction MT550 + Speech & 55" \\
-\cite{Kobayashi_2022 } & Front-Projected & Vision-Based & Gesture & Usuário único & n/a & n/a \\
-\cite{Barros_Blanco_2022 } & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & NIKVision & n/a \\
+\hline
+\cite{Manshaei_2022_Tangible} & Embedded & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & MultiTaction Cell Ultra-Thin Bezel (MT553UTB) x3 & 90” \\
+\hline
+\cite{Umezu_2022_Tangible} & Embedded & Sensor-Assisted-Vision-Based, Vision-Based & Tangibility & Colaboração presencial & n/a & 55" \\
+\hline
+\cite{Li_2022_Tangiblegrid} & n/a & Tangible-Tokens & Tangibility & Usuário único & n/a & n/a \\
+\hline
+\cite{Zappi_2022_The} & Rear-Projected & Sensor-Assisted-Vision-Based & Multi-touch, Touch & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Cerezo_2022_Working} & Rear-Projected & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Tangibility & Colaboração presencial & NIKVision & n/a \\
+\hline
 \cite{Long_2023_Fostering} & Embedded & Tangible-Tokens, Electrical-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & Ideum (Model Ommited) & n/a \\
+\hline
 \cite{Monteiro_2023_Teachable} & Headset & Tangible-Tokens, Vision-Based & Gesture, Tangibility & Usuário único & n/a & n/a \\
-\cite{Bakogeorge_2024_Embodied} & Embedded & Electrical-Based & Multi-touch, Touch & Colaboração presencial & n/a & n/a \\
-\cite{Long_2024_Xylocode} & Embedded & Tangible-Tokens, Electrical-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & Ideum (Model Ommited) & n/a \\
+\hline
 \cite{Matsuda_2024_A} & Embedded & Tangible-Tokens, Vision-Based & Tangibility & Usuário único & n/a & n/a \\
+\hline
 \cite{Porcino_2024_Aquaria} & Embedded, Headset & Tangible-Tokens, Electrical-Based, Vision-Based & Gesture, Multi-touch, Tangibility, Touch & Colaboração presencial & n/a & n/a \\
-\cite{Yu_2024 } & Front-Projected & Pen & Tangibility & Usuário único & n/a & n/a \\
-\cite{Anastasiou_2024_Pointing} & Embedded & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & MultiTaction MT550 & 55" \\
+\hline
+\cite{Bakogeorge_2024_Embodied} & Embedded & Electrical-Based & Multi-touch, Touch & Colaboração presencial & n/a & n/a \\
+\hline
+\cite{Yu_2024_Makebronze} & Front-Projected & Pen & Tangibility & Usuário único & n/a & n/a \\
+\hline
+\cite{Long_2024_Xylocode} & Embedded & Tangible-Tokens, Electrical-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & Ideum (Model Ommited) & n/a \\
+\hline
 \cite{Marlier_2025_Exploring} & Front-Projected & Tangible-Tokens & Tangibility & Colaboração presencial & n/a & n/a \\
-\bottomrule
-\end{tabular*}
-\end{table*}
+\hline
+\cite{Anastasiou_2024_Pointing} & Embedded & Sensor-Assisted-Vision-Based, Tangible-Tokens, Vision-Based & Multi-touch, Tangibility, Touch & Colaboração presencial & MultiTaction MT550 & 55" \\
+\hline
+\bottomrule % Final bottom rule
+\end{supertabular}
