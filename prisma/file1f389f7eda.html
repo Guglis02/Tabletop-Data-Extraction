@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<style>body{background-color:white;}</style>
+<link href="file1f389f7eda.html_files/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet" />
+<script src="file1f389f7eda.html_files/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<script src="file1f389f7eda.html_files/viz-1.8.2/viz.js"></script>
+<link href="file1f389f7eda.html_files/DiagrammeR-styles-0.2/styles.css" rel="stylesheet" />
+<script src="file1f389f7eda.html_files/grViz-binding-1.0.11/grViz.js"></script>
+  <title>PRISMA2020 Flowdiagram</title>
+</head>
+<body>
+<div id="htmlwidget_container">
+  <script>
+    HTMLWidgets.addPostRenderHandler(function() {
+    const node1 = document.getElementById("node1");
+    var linknode1 = "<a href='identification.html' target='_blank'>" + node1.innerHTML + "</a>";
+node1.innerHTML = linknode1;
+const node2 = document.getElementById("node2");
+    var linknode2 = "<a href='screening.html' target='_blank'>" + node2.innerHTML + "</a>";
+node2.innerHTML = linknode2;
+const node3 = document.getElementById("node3");
+    var linknode3 = "<a href='included.html' target='_blank'>" + node3.innerHTML + "</a>";
+node3.innerHTML = linknode3;
+const node4 = document.getElementById("node4");
+    var linknode4 = "<a href='newstud.html' target='_blank'>" + node4.innerHTML + "</a>";
+node4.innerHTML = linknode4;
+const node5 = document.getElementById("node5");
+    var linknode5 = "<a href='database_results.html' target='_blank'>" + node5.innerHTML + "</a>";
+node5.innerHTML = linknode5;
+const node6 = document.getElementById("node6");
+    var linknode6 = "<a href='duplicates.html' target='_blank'>" + node6.innerHTML + "</a>";
+node6.innerHTML = linknode6;
+const node7 = document.getElementById("node7");
+    var linknode7 = "<a href='dbr_assessed.html' target='_blank'>" + node7.innerHTML + "</a>";
+node7.innerHTML = linknode7;
+const node8 = document.getElementById("node8");
+    var linknode8 = "<a href='dbrexcludedrecords.html' target='_blank'>" + node8.innerHTML + "</a>";
+node8.innerHTML = linknode8;
+const node9 = document.getElementById("node9");
+    var linknode9 = "<a href='new_studies.html' target='_blank'>" + node9.innerHTML + "</a>";
+node9.innerHTML = linknode9;
+    });
+  </script>
+  <div class="grViz html-widget html-fill-item" id="htmlwidget-a7525970d063ad25bb62" style="width:960px;height:500px;"></div>
+  <script>
+    HTMLWidgets.addPostRenderHandler(function() {
+    
+       const nodeMap = new Map([["node1","Identification"], ["node2","Screening"], ["node3","Included"]]);
+       for (const [node, label] of nodeMap) {
+         var theDiv = document.getElementById(node);
+         var theText = theDiv.querySelector("text");
+         var attrX = theText.getAttribute("x");
+         var attrY = theText.getAttribute("y");
+         theText.setAttribute("y",parseFloat(attrX))
+         theText.setAttribute("x",parseFloat(attrY)*-1)
+         theText.setAttribute("style","transform: rotate(-90deg);")
+         theText.setAttribute("dominant-baseline", "middle")
+         theText.innerHTML = label;
+       }
+    
+    });
+  </script>
+</div>
+<script type="application/json" data-for="htmlwidget-a7525970d063ad25bb62">{"x":{"diagram":"digraph TD {\n        graph[\n          splines = ortho,\n          layout = neato,\n          tooltip = \"Click the boxes for further information\",\n          outputorder = edgesfirst,\n        ]node [\n        shape = box,\n        fontsize = 12,\n        fontname = Helvetica,\n        color = Goldenrod1\n      ]\n      identification [\n        color = LightSteelBlue2,\n        label = \" \",\n        style = \"filled,rounded\",\n        pos = \"0,7.5!\",\n        width = 0.4,\n        height = 2,\n        tooltip = \"Blue identification box\"\n      ];\n      screening [\n        color = LightSteelBlue2,\n        label = \" \",\n        style = \"filled,rounded\",\n        pos = \"0,5.25!\",\n        width = 0.4,\n        height = 1.5,\n        tooltip = \"Blue screening box\"\n      ];\n      included [\n        color = LightSteelBlue2,\n        label = \" \",\n        style = \"filled,rounded\",\n        pos = \"0,3!\",\n        width = 0.4,\n        height = 1.5,\n        tooltip = \"Blue included box\"\n      ];\nnode [\n          shape = box,\n          fontsize = 12,\n          fontname = Helvetica,\n          color = Goldenrod1]\n        3 [\n          label = \"Identification of new studies via databases\",\n          style = \"rounded,filled\",\n          width = 7.5,\n          height = 0.4,\n          pos = \"4.25,9.2!\",\n          tooltip = \"Yellow title box; Identification of new studies via databases\"\n        ]\n        node [\n          shape = box,\n          fontname = Helvetica,\n          color = Black]\n        4 [\n          label = \"Records identified from:\nACM Digital Library (n = 707)\nIEEE Xplore DL (n = 189)\nScience@Direct (n = 91)\nScopus (n = 178)\nSpringer Link (n = 350)\nRegisters (n = 0)\",\n          width = 3.5,\n          height = 2,\n          pos = \"2.25,7.5!\",\n          tooltip = \"Records identified from: Databases and Registers\"\n        ]\n        node [\n          shape = box,\n          fontname = Helvetica,\n          color = Black]\n        5 [\n          label = \"Records removed before screening:\nDuplicate records (n = 159)\n\",\n          width = 3.5,\n          height = 0.5,\n          pos = \"6.25,7.5!\",\n          tooltip = \"Duplicate records\"\n        ]\n        node [\n          shape = box,\n          fontname = Helvetica,\n          color = Black]\n        10 [\n          label = \"Reports assessed for eligibility\n(n = 1,356)\",\n          width = 3.5,\n          height = 0.5,\n          pos = \"2.25,5.25!\",\n          tooltip = \"Reports assessed for eligibility (databases and registers)\"\n        ]\n        node [\n          shape = box,\n          fontname = Helvetica,\n          color = Black,\n          fillcolor = White,\n          style = filled\n        ]\n        11 [\n          label = \"Reports excluded:\nEC1 (n = 356)\nEC3 (n = 74)\nEC4 (n = 14)\nEC5 (n = 343)\nEC6 (n = 14)\",\n          width = 3.5,\n          height = 0.5,\n          pos = \"6.25,5.25!\",\n          tooltip = \"Reports excluded (databases and registers)\"\n        ]\n        node [\n          shape = box,\n          fontname = Helvetica,\n          color = Black,\n          fillcolor = \"\",\n          style = solid\n        ]\n        12 [\n          label = \"New studies included in review\n(n = 556)\n\",\n          width = 3.5,\n          height = 1,\n          pos = \"2.25,3!\",\n          tooltip = \"New studies included in review\"\n        ]node [\n          shape = square,\n          width = 0,\n          color=White\n        ]\n\n\nnode [\n          shape = square,\n          width = 0,\n          style=invis\n        ]\n        C [\n          label = \"\",\n          width = 3.5,\n          height = 0.5,\n          pos = \"6.25,5.25!\",\n          tooltip = \"\"\n        ]\n        subgraph cluster1 {\n          edge [\n            style = invis\n          ]\n          3->4;\n          3->5;\n          edge [\n            color = Black,\n            arrowhead = normal,\n            arrowtail = none,\n            style = filled\n          ]\n          4->5;\n          4->10;\n          10->C;\n          10->12;\n          edge [\n            style = invis\n          ]\n          5->11;\n          \n        }\n\n\n\n{\n          rank = same; 3}\n        {\n          rank = same; 4; 5}\n        {\n          rank = same; 10; 11}\n        {\n          rank = same; 12}\n      }","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+<script type="application/htmlwidget-sizing" data-for="htmlwidget-a7525970d063ad25bb62">{"viewer":{"width":450,"height":350,"padding":15,"fill":true},"browser":{"width":960,"height":500,"padding":40,"fill":false}}</script>
+</body>
+</html>
